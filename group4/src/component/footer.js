@@ -156,7 +156,7 @@ const Footer = () => {
           <TableRow>
           
             <TableCell>
-              <FooterLink href="#">Aim</FooterLink>
+              <FooterLink href="/about">Aim</FooterLink>
             </TableCell>
             
             <TableCell>
@@ -174,7 +174,7 @@ const Footer = () => {
           <TableRow>
           
             <TableCell>
-              <FooterLink href="#">Practices</FooterLink>
+              <FooterLink href="/about">Practices</FooterLink>
             </TableCell>
             
             <TableCell>
@@ -192,7 +192,7 @@ const Footer = () => {
           <TableRow>
           
             <TableCell>
-              <FooterLink href="#">References</FooterLink>
+              <FooterLink href="/about">References</FooterLink>
             </TableCell>
             
             <TableCell>

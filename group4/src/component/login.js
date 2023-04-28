@@ -1,4 +1,30 @@
 import React from 'react';
+import './page.css';
+
+function Login() {
+  const handleBack = () => {
+    window.history.back();
+  };
+
+  return (
+    <div className="courses-container"
+    style={{
+        backgroundColor: 'black',
+        color: 'white'
+    }}
+    >
+      <button className="back-button" onClick={handleBack}>{"<"}</button>
+      <h1>Login</h1>
+      <p>content goes here</p>
+    </div>
+  );
+};
+
+export default Login;
+
+
+
+/*import React from 'react';
 
 function Login  ()  {
     return (
@@ -18,3 +44,4 @@ function Login  ()  {
 };
 
 export default Login;
+*/

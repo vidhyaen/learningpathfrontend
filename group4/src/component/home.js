@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-
 function Home() {
   const [height, setHeight] = useState(window.innerHeight);
 
@@ -12,6 +11,7 @@ function Home() {
   }, []);
 
   return (
+    
     <div
       style={{
         display: 'flex',
