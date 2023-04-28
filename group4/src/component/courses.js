@@ -2,6 +2,36 @@ import React from 'react';
 import './page.css';
 
 function Courses() {
+
+  const handleBack = () => {
+    window.history.back();
+  };
+
+  return (
+    <div className="courses-container"
+      style={{
+        backgroundColor: 'black',
+        color: 'white'
+      }}
+    >
+      <button className="back-button" color = 'black' onClick={handleBack}>{"<"}</button>
+      <h1>Courses</h1>
+      <p>content goes here</p>
+    </div>
+  );
+};
+
+export default Courses;
+
+
+
+
+
+/*
+import React from 'react';
+import './page.css';
+
+function Courses() {
   const handleBack = () => {
     window.location.href = "/";
   };
@@ -23,13 +53,7 @@ function Courses() {
 
 export default Courses;
 
-
-
-
-
-
-
-
+*/
 
 
 

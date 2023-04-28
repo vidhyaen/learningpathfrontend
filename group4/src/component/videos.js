@@ -3,7 +3,7 @@ import './page.css';
 
 function Videos() {
   const handleBack = () => {
-    window.location.href = "/";
+    window.history.back();
   };
 
   return (

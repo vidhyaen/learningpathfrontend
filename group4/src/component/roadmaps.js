@@ -3,7 +3,7 @@ import './page.css';
 
 function Roadmaps() {
   const handleBack = () => {
-    window.location.href = "/";
+    window.history.back();
   };
 
   return (
