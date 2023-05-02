@@ -12,15 +12,15 @@ function Coursedetail() {
           <div className="card bg-black pt-5 ">
             <div className="row">
               <div className="col-md-1 "></div>
-              <div className="col-md-5 card card-info p-3">
+              <div className="col-md-5 card card-info pt-3 text-center">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjyHA0z64Zo0Ovz0X6MSIoyjqPYkUVHYFgoQ&usqp=CAU"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXv33v21tavSn4Kgv_0MljV3ufbV3j5GVpzcLCRYzqtN341_MCAOpOLMCkuyWIm_t2iHE&usqp=CAU"
                   alt="ml"
-                  // height="200"
-                  // width="300"
-                  className="card card-transparent"
+                  height="100"
+                  width="800"
+                  className="card card-transparent "
                 />
-                <div className="pt-5">
+                <div className="pt-5 text-center">
                   <h4 className="">
                     The Complete Front-End Web Development Course
                   </h4>
@@ -37,7 +37,7 @@ function Coursedetail() {
                   Created by
                   <a href="https://josephdelgadillo.com/"> Joseph Delgadio</a>
                 </h5>
-                <div className="rating pb-3 text-black">
+                <div className="rating pb-3 text-black text-center">
                   <span>☆</span>
                   <span>☆</span>
                   <span>☆</span>
@@ -54,7 +54,7 @@ function Coursedetail() {
                   <div class="accordion-item ">
                     <h2 class="accordion-header" id="flush-headingOne">
                       <button
-                        class="accordion-button collapsed demo text-white text-lg"
+                        class="accordion-button collapsed demo border text-white text-lg"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne"
@@ -92,7 +92,7 @@ function Coursedetail() {
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                       <button
-                        class="accordion-button collapsed demo text-white text-lg"
+                        class="accordion-button collapsed demo border text-white text-lg"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseTwo"
@@ -116,7 +116,7 @@ function Coursedetail() {
                             </h6>
                             <button
                               className="btn btn-sm btn-outline-dark"
-                              onClick={() => navigate("/view/11")}
+                              onClick={()=>navigate("/view/1")}
                             >
                               View
                             </button>
@@ -232,7 +232,7 @@ function Coursedetail() {
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                       <button
-                        class="accordion-button collapsed demo text-white text-lg"
+                        class="accordion-button collapsed demo border text-white text-lg"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseThree"
@@ -349,7 +349,7 @@ function Coursedetail() {
           <div className="card bg-black pt-5 ">
             <div className="row">
               <div className="col-md-1 "></div>
-              <div className="col-md-5 card card-info p-3">
+              <div className="col-md-5 card card-info p-3 text-center">
                 <img
                   src="https://codecondo.com/wp-content/uploads/2017/09/back-end-developer.jpg"
                   alt="backend"
@@ -395,7 +395,7 @@ function Coursedetail() {
                   <div class="accordion-item ">
                     <h2 class="accordion-header" id="flush-headingOne">
                       <button
-                        class="accordion-button collapsed demo text-white text-lg"
+                        class="accordion-button collapsed demo text-white border text-lg"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne"
@@ -513,7 +513,7 @@ function Coursedetail() {
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                       <button
-                        class="accordion-button collapsed demo text-white text-lg"
+                        class="accordion-button collapsed demo border text-white text-lg"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseThree"
@@ -628,7 +628,7 @@ function Coursedetail() {
       {/* Course 3 */}
       {id === "3" && (
         <div className="course ">
-          <div className="card bg-black pt-5 ">
+          <div className="card bg-black pt-5 text-center">
             <div className="row">
               <div className="col-md-1 "></div>
               <div className="col-md-5 card card-info p-3">
@@ -642,9 +642,9 @@ function Coursedetail() {
                 <div className="pt-5">
                   <h4 className="">Complete Machine Learning Using Python</h4>
                   <h4 className="">
-                    Learn to create Machine Learning Algorithms in Python from
-                    Data Science experts.
+                    Learn to create Machine Learning Algorithms in
                   </h4>
+                  <h4> Python and R from two Data Science experts.</h4>
                   <h4> Code templates included. </h4>
                   <h4 className="pt-3">
                     <b> Course Duration :</b>{" "}
@@ -672,7 +672,7 @@ function Coursedetail() {
                   <div class="accordion-item ">
                     <h2 class="accordion-header" id="flush-headingOne">
                       <button
-                        class="accordion-button collapsed demo text-white text-lg"
+                        class="accordion-button collapsed demo border text-white text-lg"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne"
@@ -705,7 +705,7 @@ function Coursedetail() {
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                       <button
-                        class="accordion-button collapsed demo text-white text-lg"
+                        class="accordion-button collapsed demo text-white border text-lg"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseThree"
@@ -779,7 +779,7 @@ function Coursedetail() {
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                       <button
-                        class="accordion-button collapsed demo text-white text-lg"
+                        class="accordion-button border collapsed demo text-white text-lg"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseTwo"
@@ -902,7 +902,7 @@ function Coursedetail() {
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="flush-headingThree">
                         <button
-                          class="accordion-button collapsed demo text-white text-lg"
+                          class="accordion-button collapsed demo border text-white text-lg"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#flush-collapseThree"

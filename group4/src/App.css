@@ -115,7 +115,7 @@ a:hover,a:focus{
     transition: all .4s cubic-bezier(0.080, 1.090, 0.320, 1.275);
 }
 #accordion .panel-title a.collapsed:before{
-    color: rgba(255,255,255,0.5);
+    color: rgba(152, 6, 6, 0.5);
     transform: rotate(0deg);
 }
 #accordion .panel-body{

@@ -1,12 +1,21 @@
 import React from 'react';
-
+import './page.css';
 import { useNavigate } from 'react-router-dom';
 // import { useState } from 'react';
+
 function Course() {
+   
     const navigate = useNavigate();  
+    const handleBack = () => {
+        window.history.back();
+      };
     return (
+        <div>
+      <button className="back-button" color = 'black' onClick={handleBack}>{"<"}</button>
+     
+
         <div className="App-header">
-            <h1 className='course text-white'>Courses</h1>
+            <h1 className='course text-white text-center'>Courses</h1>
            <div className="container">
                  <div className="row technology">
                     
@@ -18,8 +27,8 @@ function Course() {
                            <h4>Frontend Developer</h4> 
                            {/* <i class="fa-regular fa-heart"></i> */}
                            </center>
-                           <div className="technology">
-                           <button className="btn btn-outline-warning btn-lg"
+                           <div className="technology text-center">
+                           <button className="btn btn-outline-warning btn-lg btn-center"
                            onClick={()=>navigate("/detail/1")}>Know More</button>
                           
 
@@ -34,7 +43,7 @@ function Course() {
                             width="180" height="180" alt="backend" className="technology"/>
                              <h4>Backend  Developer</h4> 
                              </center>
-                             <div class="technology">
+                             <div class="technology text-center">
                              <button class="btn btn-outline-warning btn-lg" onClick={()=>navigate("/detail/2")}>Know More</button>
                              </div>
                             
@@ -49,14 +58,14 @@ function Course() {
                             <h4>Machine Learning
 </h4> 
                              </center>
-                             <div className="technology">
+                             <div className="technology text-center">
                              <button className="btn btn-outline-warning btn-lg" onClick={()=>navigate("/detail/3")}>Know More</button> 
                              </div>
                         </div>  
                     </div>
                  </div>
             </div>
-        </div>
+        </div></div>
     );
     }
 export default Course;
