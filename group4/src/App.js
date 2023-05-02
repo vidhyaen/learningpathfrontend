@@ -10,7 +10,7 @@ import Login from './component/login';
 import Signup from './component/signup';
 import Home from './component/home';
 import About from './component/about';
-import Logo from './component/logo.jpg';
+import Logo from './image/logo.jpg';
 
 function App() {
   return (

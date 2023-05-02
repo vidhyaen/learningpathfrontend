@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
+import Logo from '../image/logo.jpg'
 //import {  useLocation } from 'react-router-dom';
 
 function Header() {
@@ -33,7 +34,7 @@ function Header() {
       }}
     >
       <Link to="/about" className="nav-link" onClick={handleClick} style={{ margin: '0 auto', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-        <img src="/logo.jpg" alt="" style={{ width: '40px', height: '40px', marginRight: '5px' }} />
+        <img src= {Logo} alt="" style={{ width: '40px', height: '40px', marginRight: '5px' }} />
         <span style={{ fontWeight: 'bold' }}>G4 Applicitation</span>
       </Link>
       <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginLeft: 'auto', marginRight: 'auto' }}>
