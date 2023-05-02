@@ -21,10 +21,11 @@ function Header() {
   }, []);
 
   return (
-    <header
+    <header className="header"
       style={{
-        backgroundColor: 'indigo',
+        backgroundColor: '#390642',
         borderRadius: '0px',
+        color: 'white',
         padding: '20px',
         height: '90px',
         display: 'flex',

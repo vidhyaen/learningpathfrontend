@@ -1,9 +1,9 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 function Coursedetail() {
   const { id } = useParams();
-  const navigate = useNavigate();  
+  const navigate = useNavigate();
   return (
     <div className="App-header">
       {/* Course 1 */}
@@ -110,19 +110,14 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2">
                               HTML Documents, Heading,Paragraph
                             </h6>
-                          </div>
-
-                          <div className="col-md-6">
                             <button
-                              
-                               className="btn btn-sm btn-outline-dark"
-                               onClick={()=>navigate("/Courseview/1")}
+                              className="btn btn-sm btn-outline-dark"
+                              onClick={() => navigate("/view/11")}
                             >
-                              
                               View
                             </button>
                           </div>
@@ -647,7 +642,8 @@ function Coursedetail() {
                 <div className="pt-5">
                   <h4 className="">Complete Machine Learning Using Python</h4>
                   <h4 className="">
-                    Learn to create Machine Learning Algorithms in Python from Data Science experts.
+                    Learn to create Machine Learning Algorithms in Python from
+                    Data Science experts.
                   </h4>
                   <h4> Code templates included. </h4>
                   <h4 className="pt-3">
@@ -699,7 +695,7 @@ function Coursedetail() {
                         <h6 className=" shadow text-dark py-3">
                           Basic python programming
                         </h6>
-       
+
                         <h6 className="  shadow py-3">ML Concepts</h6>
                         <h6 className="  shadow py-3">Tenser Flow</h6>
                       </div>
