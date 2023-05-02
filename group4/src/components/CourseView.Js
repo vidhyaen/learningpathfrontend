@@ -8,7 +8,7 @@ function CourseView() {
   return (
     <div className="App-header">
       {/* Course 1 */}
-      {id === "1" && (
+      {id === "11" && (
       <h1>HTML Documents, Heading,Paragraph </h1>
       )}
       {/* Course 2 */}

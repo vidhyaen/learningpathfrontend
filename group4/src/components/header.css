@@ -1,4 +1,4 @@
-header {
+.header {
     top: 0;
     left: 0;
     width: 100%;
@@ -8,15 +8,15 @@ header {
     transition: top 0.3s;
   }
   
-  header.visible {
+  .header.visible {
     top: 0;
   }
   
-  header.hidden {
+  .header.hidden {
     top: -100px;
   }
   
-  header {
+  .header {
     background-color: indigo;
     border-radius: 0px;
     padding: 20px;
@@ -25,7 +25,7 @@ header {
     align-items: center;
   }
   
-  header a {
+  .header a {
     color: white;
     text-decoration: none;
     display: flex;
@@ -33,11 +33,11 @@ header {
     align-items: center;
   }
   
-  header a:hover {
+  .header a:hover {
     color: lightgray;
   }
   
-  header a.active {
+  .header a.active {
     color: black;
   }
   
