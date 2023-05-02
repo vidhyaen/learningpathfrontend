@@ -1,13 +1,18 @@
 
 import './App.css';
+import {Routes, Route} from 'react-router-dom';
+import Coursedetail from './components/Coursedetail';
 import Course from './components/Course';
-function App() {
+import CourseView from './components/CourseView.Js';
+function App() {  
   return (
     <div className="App">
-    <header className="App-header">
-      <Course/>
-
-    </header>
+    <Routes>
+          <Route path="/detail/:id" element={<Coursedetail />} />
+          <Route path='/course' element={<Course/>} />
+          <Route path="Courseview/:id" element={<CourseView/>} />
+     </Routes>
+   
   </div>
   );
 }
