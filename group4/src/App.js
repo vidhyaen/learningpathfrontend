@@ -12,8 +12,12 @@ import Login from './component/login';
 import Signup from './component/signup';
 import Home from './component/home';
 import About from './component/about';
+<<<<<<< HEAD
 import Logo from './component/logo.jpg';
 >>>>>>> b78665b (Done with header and footer navigation)
+=======
+import Logo from './image/logo.jpg';
+>>>>>>> e47d734 (changes in logo)
 
 import './App.css';
 import {Routes, Route} from 'react-router-dom';
