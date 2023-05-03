@@ -1,0 +1,81 @@
+<div className="col-md-6">
+            <div className="row">
+                <div className="col-md-6 mb-5">
+                <button className="btn btn-lg btn-success">Mark as Done</button>
+                  </div>
+               
+                  </div>
+                  
+              <div className="border border-danger  text-white ">
+             <div className="text-center pt-5">
+              <h1 className="text-center btn-lg p-3 btn btn-info text-white"><b>HTML Introduction</b></h1></div>
+              
+                <h3 className="p">HTML stands for Hyper Text Markup Language</h3>
+                <h3 className="p"> HTML is the standard markup language for creating Web pages</h3>
+                <h3 className="p">HTML describes the structure of a Web page</h3>
+              
+              <div className="text-center ">
+              <h1 className="text-center btn-lg p-3 btn btn-info text-white"><b>HTML Document</b></h1></div>
+              
+              <h3 className="p">
+                {`All HTML documents must start with a document type declaration:
+                 <!DOCTYPE html>.`
+                 }</h3>  
+              <h3 className="p">
+                {`All HTML documents must start with a document type declaration:
+                 <!DOCTYPE html>.`
+                 }</h3>  
+              <h3 className="p">
+                {`
+The HTML document itself begins with <html> and ends with </html>..`
+                 }</h3>  
+              <h3 className="p"> {`The visible part of the HTML document is between <body> and </body>.`}       </h3>
+
+
+<div className="text-center ">
+              <h1 className="text-center btn-lg p-3 btn btn-info text-white"><b>HTML Heading</b></h1></div>
+              
+              <h3 className="p">
+                {`HTML headings are defined with the <h1> to <h6> tags.>.`
+                 }</h3>  
+              <h3 className="p">
+                {`<h1> defines the most important heading. <h6> defines the least important heading:`
+                 }</h3>  
+            
+      
+              </div>
+
+               
+
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-6">
+                <div class=" p-4 mt-2">
+                  <h2 class="heading text-center">
+                    Your Learning Journey Starts Here
+                  </h2>
+                  <h3 class="heading mt-4 text-center">
+                    Hi! How can we help You?
+                  </h3>
+                  <div class="d-flex justify-content-center px-2">
+                    <div class="search">
+                      <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search..."
+                        name=""
+                      />
+                      <a href="/" class="search-icon">
+                        <i class="fa fa-search"></i>{" "}
+                      </a>
+                    </div>
+                  </div>{" "}
+                </div>{" "}
+              </div>
+              <h1 className="text-center">
+                <a href="/course" className="text-center">
+                  Not Sure Where To Begin?
+                </a>
+              </h1>
+            </div>
+          </div>     

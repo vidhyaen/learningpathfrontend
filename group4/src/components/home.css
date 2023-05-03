@@ -1,10 +1,15 @@
 body{
-    background-color:blue;
+    background-color:black;
       
     }
     .learntocodeh1 {
         font-size: 70px;
         font-weight: 700;
+        height: 690px;
+      padding-left: 50px;
+        background-image: url("https://www.shutterstock.com/image-photo/education-distance-elearning-online-learning-260nw-2209948315.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .card{

@@ -22,53 +22,63 @@ function Home() {
         backgroundColor: "black",
         color: "white",
       }}
+      className="container"
     >
-      <div className="mt-5">
-        {/* <div className='row'>
-          
-        */}
-        <div className=" mt-5 shadow card" style={{ backgroundColor: "black" }}>
-          <h1 className="text-center learntocodeh1"> Learn & Explore More</h1>
-
-          <div class="container">
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-6">
-                <div class=" p-4 mt-2">
-                  <h2 class="heading text-center">
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://sellcoursesonline.com/wp-content/uploads/2022/05/types-of-online-courses.png" className="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+    <div class="">
+      
+    <div class="row d-flex justify-content-right learntocodeh1">
+              <div class="col-md-6 mt-5">
+                <div class="  mt-5">
+                  <h2 class="heading ">
                     Your Learning Journey Starts Here
                   </h2>
-                  <h3 class="heading mt-4 text-center">
+                  <h3 class="heading mt-4 ">
                     Hi! How can we help You?
                   </h3>
-                  <div class="d-flex justify-content-center px-2">
-                    <div class="search">
-                      <input
+                  <div class="d-flex col-md-6  ">
+                    <div class=" search d-flex pt-3 ">
+                    <input
                         type="text"
                         class="search-input"
                         placeholder="Search..."
-                        name=""
-                      />
-                      <a href="/" class="search-icon">
+                        name=""/>
+                      <a href="/" class="search-icon search ">
                         <i class="fa fa-search"></i>{" "}
                       </a>
                     </div>
+                    
                   </div>{" "}
-                </div>{" "}
-              </div>
-              <h1 className="text-center">
-                <a href="/course" className="text-center">
+                  <h1 className=" mt-5">
+                <a href="/course" className=" text-white">
                   Not Sure Where To Begin?
                 </a>
               </h1>
+                </div>{" "}
+              </div>
+             
             </div>
-          </div>
-
-          <h1> </h1>
-        </div>
-      </div>
     </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 
-    // </div>
+        </div>
+  
+</div>
+
   );
 }
 
