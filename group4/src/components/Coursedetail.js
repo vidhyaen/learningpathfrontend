@@ -71,19 +71,19 @@ function Coursedetail() {
                       data-bs-parent="#accordionFlushExample"
                     >
                       <div class="accordion-body">
-                        <h6 className=" shadow  text-dark py-3 ">
+                        <h6 className="   text-dark p-3 shadow ">
                           Build a simple HTML text site
                         </h6>
-                        <h6 className=" shadow text-dark py-3">
+                        <h6 className="  text-dark p-3 shadow">
                           Style web pages using CSS
                         </h6>
-                        <h6 className=" shadow  text-dark py-3">
+                        <h6 className="   text-dark p-3 shadow">
                           Program websites with JavaScript
                         </h6>
-                        <h6 className="  shadow py-3">
+                        <h6 className="  p-3 shadow">
                           Build a Pipboy using Bootstrap
                         </h6>
-                        <h6 className="  shadow py-3">
+                        <h6 className="  p-3 shadow">
                           Build and publish a Google Chrome Extension
                         </h6>
                       </div>
@@ -110,13 +110,13 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow d-flex ">
                             <h6 className="  text-dark mt-2">
                               HTML Documents, Heading,Paragraph
                             </h6>
                             <button
                               className="btn btn-sm btn-outline-dark"
-                              onClick={()=>navigate("/view/1")}
+                              onClick={() => navigate("/view/1")}
                             >
                               View
                             </button>
@@ -132,13 +132,10 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow d-flex justify-content-between p-2 ">
+                            <h6 className="  text-dark mt-2 ">
                               HTML Links & Image
                             </h6>
-                          </div>
-
-                          <div className="col-md-6">
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -158,13 +155,9 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
-                              HTML Forms{" "}
-                            </h6>
-                          </div>
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow d-flex justify-content-between p-2">
+                            <h6 className="  text-dark mt-2  ">HTML Forms </h6>
 
-                          <div className="col-md-6">
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -184,13 +177,9 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
-                              HTML Tables{" "}
-                            </h6>
-                          </div>
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow shadow d-flex justify-content-between p-2 ">
+                            <h6 className="  text-dark mt-2  ">HTML Tables </h6>
 
-                          <div className="col-md-6">
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -210,13 +199,11 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               HTML Graphics{" "}
                             </h6>
-                          </div>
 
-                          <div className="col-md-6">
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -250,13 +237,11 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               CSS Syntax &Three Type Of CSS
                             </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                        
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -267,13 +252,11 @@ function Coursedetail() {
                           </div>
                         </div>
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               CSS Selector & Background
                             </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                        
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -284,13 +267,11 @@ function Coursedetail() {
                           </div>
                         </div>
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               Border,Margin,Padding{" "}
                             </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                          
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -301,13 +282,11 @@ function Coursedetail() {
                           </div>
                         </div>
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               Pseudo-classes & Elements
                             </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                         
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -318,13 +297,9 @@ function Coursedetail() {
                           </div>
                         </div>
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
-                              Grid & Flex{" "}
-                            </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">Grid & Flex </h6>
+                          
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -412,17 +387,13 @@ function Coursedetail() {
                       data-bs-parent="#accordionFlushExample"
                     >
                       <div class="accordion-body">
-                        <h6 className=" shadow  text-dark py-3 ">
+                        <h6 className="text-dark p-3 shadow ">
                           Introduction & Getting Started
                         </h6>
-                        <h6 className=" shadow text-dark py-3">
-                          Install & setup{" "}
-                        </h6>
-                        <h6 className=" shadow  text-dark py-3">Basic React</h6>
-                        <h6 className="  shadow py-3">
-                          Basic NodeJS & Express
-                        </h6>
-                        <h6 className="  shadow py-3">MongoDB</h6>
+                        <h6 className=" text-dark p-3 shadow">Install & setup </h6>
+                        <h6 className=" text-dark p-3 shadow">Basic React</h6>
+                        <h6 className=" text-dark p-3 shadow">Basic NodeJS & Express</h6>
+                        <h6 className=" text-dark p-3 shadow">MongoDB</h6>
                       </div>
                     </div>
                   </div>
@@ -447,13 +418,11 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2 ">
                               Server setup with Express.js and Node.js
                             </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                          
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -473,13 +442,11 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               Database management with MongoDB
                             </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                          
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -531,13 +498,11 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               Create React App & Folder Structure
                             </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                         
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -548,13 +513,11 @@ function Coursedetail() {
                           </div>
                         </div>
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               Class & Functional Components
                             </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                        
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -565,13 +528,11 @@ function Coursedetail() {
                           </div>
                         </div>
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               Props, State & Events
                             </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                        
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -582,13 +543,11 @@ function Coursedetail() {
                           </div>
                         </div>
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               React Forms ,Router & Links
                             </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                         
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -599,13 +558,9 @@ function Coursedetail() {
                           </div>
                         </div>
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
-                              React Hooks
-                            </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">React Hooks</h6>
+                        
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -622,16 +577,16 @@ function Coursedetail() {
               </div>
             </div>
           </div>
-          <div className="coursecontent"></div>
+         
         </div>
       )}
       {/* Course 3 */}
       {id === "3" && (
         <div className="course ">
-          <div className="card bg-black pt-5 text-center">
+          <div className="card bg-black pt-5 ">
             <div className="row">
               <div className="col-md-1 "></div>
-              <div className="col-md-5 card card-info p-3">
+              <div className="col-md-5 card card-info p-3 text-center">
                 <img
                   src="https://mindphp.com/images/Hosting_Directadmin/Webmail/Machine-Learning.jpg"
                   alt="ml"
@@ -689,15 +644,15 @@ function Coursedetail() {
                       data-bs-parent="#accordionFlushExample"
                     >
                       <div class="accordion-body">
-                        <h6 className=" shadow  text-dark py-3 ">
+                        <h6 className="text-dark shadow  p-3 ">
                           Introduction to Machine Learning
                         </h6>
-                        <h6 className=" shadow text-dark py-3">
+                        <h6 className="  text-dark shadow p-3">
                           Basic python programming
                         </h6>
 
-                        <h6 className="  shadow py-3">ML Concepts</h6>
-                        <h6 className="  shadow py-3">Tenser Flow</h6>
+                        <h6 className=" text-dark shadow p-3">ML Concepts</h6>
+                        <h6 className=" text-dark  shadow p-3">Tenser Flow</h6>
                       </div>
                     </div>
                   </div>
@@ -723,13 +678,9 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
-                              Python Numpy
-                            </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">Python Numpy</h6>
+                         
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -740,13 +691,11 @@ function Coursedetail() {
                           </div>
                         </div>
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               Python Matplotlib
                             </h6>
-                          </div>
-
-                          <div className="col-md-6">
+                        
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -757,13 +706,11 @@ function Coursedetail() {
                           </div>
                         </div>
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               Python Pandas
                             </h6>
-                          </div>
 
-                          <div className="col-md-6">
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -797,13 +744,11 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2 ">
                               ML Linear Graph & Plots
                             </h6>
-                          </div>
 
-                          <div className="col-md-6">
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -823,13 +768,11 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               ML Training & Testing
                             </h6>
-                          </div>
 
-                          <div className="col-md-6">
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -849,13 +792,11 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               ML Learning & Prediction
                             </h6>
-                          </div>
 
-                          <div className="col-md-6">
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -875,13 +816,11 @@ function Coursedetail() {
                     >
                       <div class="accordion-body">
                         <div className="row">
-                          <div className="col-md-6">
-                            <h6 className="  text-dark py-3 shadow ">
+                          <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                            <h6 className="  text-dark mt-2  ">
                               ML Data Cluster & Regression
                             </h6>
-                          </div>
 
-                          <div className="col-md-6">
                             <a
                               href="/Course"
                               className="btn btn-sm btn-outline-dark"
@@ -920,13 +859,11 @@ function Coursedetail() {
                       >
                         <div class="accordion-body">
                           <div className="row">
-                            <div className="col-md-6">
-                              <h6 className="  text-dark py-3 shadow ">
+                            <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                              <h6 className="  text-dark mt-2  ">
                                 Tenser Flow Operations
                               </h6>
-                            </div>
 
-                            <div className="col-md-6">
                               <a
                                 href="/Course"
                                 className="btn btn-sm btn-outline-dark"
@@ -937,13 +874,11 @@ function Coursedetail() {
                             </div>
                           </div>
                           <div className="row">
-                            <div className="col-md-6">
-                              <h6 className="  text-dark py-3 shadow ">
+                            <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                              <h6 className="  text-dark mt-2  ">
                                 Tenser Flow Models
                               </h6>
-                            </div>
 
-                            <div className="col-md-6">
                               <a
                                 href="/Course"
                                 className="btn btn-sm btn-outline-dark"
@@ -954,13 +889,11 @@ function Coursedetail() {
                             </div>
                           </div>
                           <div className="row">
-                            <div className="col-md-6">
-                              <h6 className="  text-dark py-3 shadow ">
+                            <div className="col-md-12 d-flex justify-content-between p-2 shadow">
+                              <h6 className="  text-dark mt-2  ">
                                 Tenser Flow Visors
                               </h6>
-                            </div>
 
-                            <div className="col-md-6">
                               <a
                                 href="/Course"
                                 className="btn btn-sm btn-outline-dark"

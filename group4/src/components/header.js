@@ -39,9 +39,10 @@ function Header() {
         <span style={{ fontWeight: 'bold' }}>G4 Applicitation</span>
       </Link>
       <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginLeft: 'auto', marginRight: 'auto' }}>
+        <Link to="/" className="nav-link" onClick={handleClick}>Home</Link>
         <Link to="/course" className="nav-link" onClick={handleClick}>Courses</Link>
         <Link to="/certifications" className="nav-link" onClick={handleClick}>Certifications</Link>
-        <Link to="/roadmaps" className="nav-link" onClick={handleClick}>Roadmaps</Link>
+        {/* <Link to="/roadmaps" className="nav-link" onClick={handleClick}>Roadmaps</Link> */}
         <Link to="/videos" className="nav-link" onClick={handleClick}>Videos</Link>
       </div>
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginLeft: 'auto', marginRight: 'auto' }}>
