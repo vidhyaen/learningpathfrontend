@@ -24,36 +24,19 @@ function Courseview() {
          
           <div className="row">
             <div className="col-md-6">
-            <div className="row">
-                <div className="col-md-6 mb-5">
-                <button className="btn btn-lg btn-success">Mark as Done</button>
-                  </div>
-                  <div className="col-md-5 mb-5 text-center">
-                       <h1 className="text-center">HTML Introduction</h1>
-                  </div>
-                  </div>
-                  
-              <div className="border border-danger p-5 text-white">
-                <h4 className="text-white">
-                  HTML is the standard markup language for Web pages.
-                </h4>
-                <h4 className="text-white">
-                  With HTML you can create your own Website.
-                </h4>
-                <h4 className="text-white">
-                  {" "}
-                  HTML is easy to learn - You will enjoy it!
-                </h4>
-              </div>
-              </div>
+        
 
-            <div className="col-md-5">
+            </div>
+            
+             
+
+            <div className="col-md-4">
               
             <div className="row ">
-                  <div className="col-md-6 ">
+                  <div className="col-md-8 ">
                     <h1 className="text-center">Sample document </h1>
                   </div>
-                  <div className="col-md-6 mb-5 text-center">
+                  <div className="col-md-4 mb-5 text-center">
                     <button
                       className="btn btn-lg btn-warning"
                       onCopy="copyhandler"
@@ -69,22 +52,39 @@ function Courseview() {
 
                 <div className="bg-dark  shadow p-5">
                   <pre className="">
-                    <h3>&lt;!DOCTYPE html&gt;</h3>
-                    <h3>&lt;html&gt;</h3>
-                    <h3> &lt;title&gt;Page Title </h3>
-                    <h3> &lt;head&gt;</h3>
-                    <h3> &lt;body&gt;</h3>
-                    <h3> &lt;h1&gt;My First Heading&lt;/h1&gt; </h3>
-
-                    <h3> &lt;p&gt;My First Paragraph &lt;/p&gt; </h3>
-                    <h3> &lt;/body&gt; &lt;/html&gt; </h3>
+                    <h2>
+                    {`<!DOCTYPE html>
+<html>
+<body>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+<p>This is a paragraph.</p>
+</body>
+</html>`}
+                    </h2>
+                   
                   </pre>
+                    <ouput className="text-white">
+                    <h1 className="text-center">Output</h1>
+                    <h1>This is heading 1</h1>
+                    <h2>This is heading 2</h2>
+                    <h3>This is heading 3</h3>
+                    <h4 className="text-white">This is heading 4</h4>
+                    <h5>This is heading 5</h5>
+                    <h6>This is heading 6</h6>
+                    <p>This is a paragraph.</p>
+                  </ouput>
                 </div>
+             
               </div>
             </div>
-          </div>
-          <div></div>
+            </div>
         </div>
+    
       )}
       {/* Course 2 */}
       {id === "2" && <h1> HTML Links & Image</h1>}
