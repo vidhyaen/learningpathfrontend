@@ -3,7 +3,9 @@ import "./home.css";
 
 function Home() {
   const [height, setHeight] = useState(window.innerHeight);
-
+  const handleBack = () => {
+    window.history.forward();
+  };
   useEffect(() => {
     function handleResize() {
       setHeight(window.innerHeight);
@@ -25,6 +27,13 @@ function Home() {
       }}
       className=""
     >
+      <button
+    className="back-button text-center pt-3"
+    color="black"
+    onClick={handleBack}
+  >
+    {">"}
+  </button>
 <div id="carouselExampleInterval" class="container carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">

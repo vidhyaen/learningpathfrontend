@@ -11,6 +11,7 @@
     z-index: 1; /* Stay on top */
     top:0; /* Stay at the top */
     left: 0;
+    font-size: small;
     
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
@@ -20,7 +21,7 @@
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color:white;
     
     display: block;
@@ -42,3 +43,5 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+ 

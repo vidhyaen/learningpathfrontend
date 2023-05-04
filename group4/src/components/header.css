@@ -60,7 +60,7 @@
   
   .btn-login,
   .btn-signup {
-    background-color: lightgray;
+    background-color: rgb(185, 9, 9);
     border-radius: 20px;
     padding: 5px 25px;
     border: none;
