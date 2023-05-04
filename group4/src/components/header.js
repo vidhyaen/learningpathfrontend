@@ -14,7 +14,7 @@ function Header() {
 
   useEffect(() => {
     const handlePopstate = () => {
-      setIsHidden(false);
+      setIsHidden(true);
     };
     window.addEventListener('popstate', handlePopstate);
     return () => window.removeEventListener('popstate', handlePopstate);
@@ -42,7 +42,7 @@ function Header() {
         <Link to="/" className="nav-link" onClick={handleClick}>Home</Link>
         <Link to="/course" className="nav-link" onClick={handleClick}>Courses</Link>
         <Link to="/certifications" className="nav-link" onClick={handleClick}>Certifications</Link>
-        {/* <Link to="/roadmaps" className="nav-link" onClick={handleClick}>Roadmaps</Link> */}
+         <Link to="/roadmaps" className="nav-link" onClick={handleClick}>Roadmaps</Link> 
         <Link to="/videos" className="nav-link" onClick={handleClick}>Videos</Link>
       </div>
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginLeft: 'auto', marginRight: 'auto' }}>
