@@ -1,6 +1,6 @@
 import React from "react";
 import "./Courseview.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 
 import { useParams } from "react-router-dom";
@@ -8,17 +8,23 @@ import { useParams } from "react-router-dom";
 function Courseview() {
   const [active, setActive] = useState(false);
   const { id } = useParams();
+  const [copied, setCopied] = useState(false);
+  const [code]=useState();
   const handleBack = () => {
     window.history.back();
   };
   const [setIsHidden] = useState(true);
   //const location = useLocation();
-
+ 
 
   const handleClick = () => {
     setIsHidden(true);
   };
-
+  function handleCopy(code) {
+    navigator.clipboard.writeText(code)
+      .then(() => setCopied(true))
+      .catch(() => setCopied(false));
+  }
   const handleComplete=()=>{
     setActive(!active);
   }
@@ -26,27 +32,28 @@ function Courseview() {
   return (
     <div className="App-header pt-5">
       {/* Course 1 */}
-      <input type="checkbox" id="check" hidden={setIsHidden}  onClick={handleClick}/>
-     
+      <input type="hidden"  hidden={setIsHidden}  onClick={handleClick}/>
+{/*      
       <button
         className="back-button text-center pt-3"
         color="black"
         onClick={handleBack}
       >
         {"<"}
-      </button>
+      </button> */}
+      
       {id === "1" && (
-        <div className="text-white">
+        <div className="text-white mt-5">
           <div className="row">
             <div className="col-md-3">
               <div className="sidenav">
                 <a href="#section1" className="btn">
-                  HTML Introduction
+                 <h3> HTML Introduction</h3>
                 </a>
                 <a href="#section2" className="btn">
                   HTML Document
                 </a>
-                <a href="#section3" className="btn">
+                <a href="#section3" className="btn ">
                   HTML Heading
                 </a>
                 <a href="#section4" className="btn">
@@ -185,16 +192,21 @@ function Courseview() {
                   <div className="col-md-4 mb-5 text-center">
                     <button
                       className="btn btn-lg btn-warning"
-                      onCopy="copyhandler"
+                      onClick={handleCopy}
+
                     >
-                      Copy text
+                      {copied ? 'Copied!' : 'Copy Code'}
                     </button>
+                  
                   </div>
 
                   <div className=" shadow  text-white">
                     <div className="bg-dark  shadow p-5">
-                      <pre className="">
-                        <h2>
+                    <pre>
+        <code>
+          {code ?'<!DOCTYPE html>\n<html>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>':null}</code>
+        <h2>
+          <pre>{code}</pre>
                           {`<!DOCTYPE html>
   <html>
   <body>
@@ -206,9 +218,10 @@ function Courseview() {
   <h6>This is heading 6</h6>
   <p>This is a paragraph.</p>
   </body>
-  </html>`}
-                        </h2>
-                      </pre>
+  </html>`}</h2>
+        
+      </pre>
+                      
                     </div>
                   </div>
                 </div>

@@ -4,8 +4,20 @@ import { useParams } from "react-router-dom";
 function Coursedetail() {
   const { id } = useParams();
   const navigate = useNavigate();
+   
+    const handleBack = () => {
+        window.history.back();
+      };
   return (
+   
     <div className="App-header">
+       <button
+    className="back-button text-center pt-3"
+    color="black"
+    onClick={handleBack}
+  >
+    {"<"}
+  </button>
       {/* Course 1 */}
       {id === "1" && (
         <div className="course ">
