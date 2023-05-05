@@ -309,11 +309,11 @@ function videos() {
         style={{ alignSelf: "center", width: "600px", height: "300px" }}
       />
       </div>
-      <button className="back-button" onClick={handleBack}>{"<"}</button>
+      {/* <button className="back-button" onClick={handleBack}>{"<"}</button> */}
       <h1>Videos</h1>
       <p>content goes here</p>
     </div>
   );
 };
 
-export default Videos;
+export default videos;
