@@ -8,9 +8,7 @@ function Login() {
 
   const [password, setPassword] = useState("");
 
-  const handleBack = () => {
-    window.history.back();
-  };
+
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -29,6 +27,7 @@ function Login() {
   };
 
   return (
+    
     <div
       className="courses-container"
       style={{
@@ -36,10 +35,8 @@ function Login() {
         color: "white",
       }}
     >
-      <button className="back-button" onClick={handleBack}>
-        {"<"}
-      </button>
-      <div className="container">
+      
+      <div className="container1 mt-5">
         <div className="login-container">
           <h1>Login</h1>
 
@@ -70,7 +67,7 @@ function Login() {
 
 <div className="row">
   <div className="col-md-4">
-  <button type="submit" className="btn btn-danger text-center btn-small">
+  <button type="submit" className="btn btn-danger text-center btn-small mt-3">
               Login
             </button>
     </div>

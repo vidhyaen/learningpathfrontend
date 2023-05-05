@@ -9,17 +9,28 @@ function Courseview() {
   const [active, setActive] = useState(false);
   const { id } = useParams();
   const [copied, setCopied] = useState(false);
-  const [code]=useState();
-  const handleBack = () => {
-    window.history.back();
-  };
-  const [setIsHidden] = useState(true);
+const [code]=useState(  `<!DOCTYPE html>
+<html>
+<body>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+<p>This is a paragraph.</p>
+</body>
+</html>`);
+  // const handleBack = () => {
+  //   window.history.back();
+  // };
+  //const [setIsHidden] = useState(true);
   //const location = useLocation();
  
 
-  const handleClick = () => {
-    setIsHidden(true);
-  };
+  // const handleClick = () => {
+  //   // setIsHidden(false);
+  // };
   function handleCopy(code) {
     navigator.clipboard.writeText(code)
       .then(() => setCopied(true))
@@ -28,13 +39,16 @@ function Courseview() {
   const handleComplete=()=>{
     setActive(!active);
   }
+  useEffect(() => { 
+  setCopied(false);
+  }, [code]);
 
   return (
     <div className="App-header pt-5">
       {/* Course 1 */}
-      <input type="hidden"  hidden={setIsHidden}  onClick={handleClick}/>
-{/*      
-      <button
+      {/* <input type="hidden"  hidden={setIsHidden}  onClick={handleClick}/> */}
+     
+      {/* <button
         className="back-button text-center pt-3"
         color="black"
         onClick={handleBack}
@@ -46,8 +60,8 @@ function Courseview() {
         <div className="text-white mt-5">
           <div className="row">
             <div className="col-md-3">
-              <div className="sidenav">
-                <a href="#section1" className="btn">
+              <div className="sidenav mt-5">
+                <a href="#section1" className="btn mt-5">
                  <h3> HTML Introduction</h3>
                 </a>
                 <a href="#section2" className="btn">
@@ -61,7 +75,7 @@ function Courseview() {
                 </a>
               </div>
             </div>
-            <div className="col-md-6 ">
+            <div className="col-md-6 mt-3 ">
               <div className="section one" id="section1">
                 <div className="text-center pt-2">
                 <div className="row ">
@@ -192,7 +206,10 @@ function Courseview() {
                   <div className="col-md-4 mb-5 text-center">
                     <button
                       className="btn btn-lg btn-warning"
-                      onClick={handleCopy}
+                      onClick={()=>{
+                        handleCopy(code);
+                        setCopied(true);}
+                      }
 
                     >
                       {copied ? 'Copied!' : 'Copy Code'}
@@ -202,25 +219,13 @@ function Courseview() {
 
                   <div className=" shadow  text-white">
                     <div className="bg-dark  shadow p-5">
-                    <pre>
-        <code>
-          {code ?'<!DOCTYPE html>\n<html>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>':null}</code>
-        <h2>
-          <pre>{code}</pre>
-                          {`<!DOCTYPE html>
-  <html>
-  <body>
-  <h1>This is heading 1</h1>
-  <h2>This is heading 2</h2>
-  <h3>This is heading 3</h3>
-  <h4>This is heading 4</h4>
-  <h5>This is heading 5</h5>
-  <h6>This is heading 6</h6>
-  <p>This is a paragraph.</p>
-  </body>
-  </html>`}</h2>
-        
+             <h2>
+             <pre>
+        <code>{code}</code>
       </pre>
+                        </h2>
+        
+   
                       
                     </div>
                   </div>
