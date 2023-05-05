@@ -1,4 +1,4 @@
-.container {
+.container1{
 
       display: flex;
     
@@ -48,7 +48,7 @@
     
       margin-bottom: 2rem;
     
-      text-align: center;
+      /* text-align: center; */
     
       color: #e7dbe3;
     
@@ -136,13 +136,13 @@
     
     
     
-     .btn {
+     .btn1 {
     
       display: block;
     
       width: 100%;
     
-      padding: 0.75rem;
+      /* padding: 0.75rem; */
     
       border: none;
     
@@ -163,13 +163,10 @@
       margin-top: 2rem;
     
      }
-    .btn1
-    {
-        
-    }
+ 
     
     
-     .btn:hover {
+     .btn1:hover {
     
       background-color:transparent;
     
@@ -177,7 +174,7 @@
     
     
     
-     .back-button {
+     /* .back-button {
     
       position: absolute;
     
@@ -198,7 +195,7 @@
       transition: color 0.2s ease-in-out;
     
      }
-    
+     */
     
     
      .back-button:hover {
@@ -209,7 +206,7 @@
     
     
     
-     .footer {
+     .footer1 {
     
       position: absolute;
     
@@ -247,13 +244,13 @@
     
       border: none;
     
-      color: #0b0eb6;
+      color: #ede9ef;
     
       cursor: pointer;
     
-      font-size: 15px;
+      font-size: 18px;
     
-      margin-top: 40px; 
+      margin-top: 20px; 
     
       text-decoration: underline;
     
