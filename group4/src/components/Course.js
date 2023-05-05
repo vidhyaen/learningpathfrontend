@@ -6,12 +6,10 @@ import { useNavigate } from 'react-router-dom';
 function Course() {
    
     const navigate = useNavigate();  
-    const handleBack = () => {
-        window.history.back();
-      };
+   
     return (
         <div>
-      <button className="back-button" color = 'black' onClick={handleBack}>{"<"}</button>
+    
      
 
         <div className="App-header">
