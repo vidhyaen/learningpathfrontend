@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./home.css";
-
 function Home() {
   const [height, setHeight] = useState(window.innerHeight);
  
@@ -23,10 +22,10 @@ function Home() {
         backgroundColor: "black",
         color: "white",
       }}
-      className=""
+      className="container"
     >
     
-<div id="carouselExampleInterval" class="container carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
       <img src="https://sellcoursesonline.com/wp-content/uploads/2022/05/types-of-online-courses.png" className="d-block w-100" alt="..."/>
@@ -56,11 +55,11 @@ function Home() {
                     </div>
                     
                   </div>{" "}
-                  <h2 className=" mt-3">
+                  <h1 className=" mt-5">
                 <a href="/course" className=" text-white">
-                  Not Sure Where To Begin? <button className="btn btn-sm btn-danger">Click ME</button>
+                  Not Sure Where To Begin?
                 </a>
-              </h2>
+              </h1>
                 </div>{" "}
               </div>
              

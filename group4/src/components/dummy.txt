@@ -15,7 +15,7 @@
                 <h3 className="p">HTML describes the structure of a Web page</h3>
               
               <div className="text-center ">
-              <h1 className="text-center  text-white"><b>HTML Document</b></h1></div>
+              <h1 className="text-center btn-lg p-3 btn btn-info text-white"><b>HTML Document</b></h1></div>
               
               <h3 className="p">
                 {`All HTML documents must start with a document type declaration:
@@ -78,26 +78,7 @@ The HTML document itself begins with <html> and ends with </html>..`
                 </a>
               </h1>
             </div>
-          </div>     \
-
-           <h6
-        style={{
-          color: "violet",
-          textAlign: "center",
-          fontFamily: "Gabriola",
-          fontSize: "25px",
-        }}
-      >
-        Salesforce is releasing more certifications than ever before,<br></br>{" "}
-        and if you’re like most Trailblazers, you just have an urge to catch ‘em
-        all!<br></br>
-        <br></br>
-        There are 40+ Salesforce certifications out there.<br></br> You will
-        find the complete list on this page with information on the recommended
-        experience candidates should have, exam topics, plus resources to help
-        you prepare.
-      </h6>
-
+          </div>     
 mport { useState } from 'react';
 
 function CodeSnippet({ code }) {

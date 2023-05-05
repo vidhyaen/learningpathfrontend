@@ -11,12 +11,11 @@ function videos() {
   // };
 
   return (
-    <div
-      className="courses-container"
-      style={{
-        backgroundColor: "black",
-        color: "white",
-      }}
+    <div className="courses-container"
+    style={{
+        backgroundColor: 'black',
+        color: 'white'
+    }}
     >
       {/* <button className="back-button" onClick={handleBack}>
         {"<"}
@@ -310,7 +309,11 @@ function videos() {
         style={{ alignSelf: "center", width: "600px", height: "300px" }}
       />
       </div>
+      <button className="back-button" onClick={handleBack}>{"<"}</button>
+      <h1>Videos</h1>
+      <p>content goes here</p>
     </div>
   );
-}
-export default videos;
+};
+
+export default Videos;

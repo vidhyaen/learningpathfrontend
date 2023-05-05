@@ -1,7 +1,6 @@
 
 import React, { useState } from "react";
 import styled from "styled-components";
-
 const FooterHeading = styled.button`
 background-color: black;
 color: white;
