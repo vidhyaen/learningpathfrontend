@@ -1,9 +1,10 @@
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 function Coursedetail() {
   const { id } = useParams();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div className="App-header">

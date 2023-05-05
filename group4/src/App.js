@@ -13,21 +13,14 @@ import Login from './component/login';
 import Signup from './component/signup';
 import Home from './component/home';
 import About from './component/about';
-<<<<<<< HEAD
-import Logo from './component/logo.jpg';
->>>>>>> b78665b (Done with header and footer navigation)
-=======
 import Logo from './image/logo.jpg';
->>>>>>> e47d734 (changes in logo)
 
-import './App.css';
-import {Routes, Route} from 'react-router-dom';
 import Coursedetail from './components/Coursedetail';
 import Course from './components/Course';
-import CourseView from './components/CourseView.Js';
-function App() {  
+import "bootstrap/dist/css/bootstrap.min.css";
+import CourseView from './components/Courseview';
+function App() {
   return (
-<<<<<<< HEAD
     <div className="App">
     <Routes>
           <Route path="/detail/:id" element={<Coursedetail />} />
@@ -36,7 +29,6 @@ function App() {
      </Routes>
    
   </div>
-=======
     <BrowserRouter>
       <div>
         <Header />
@@ -55,7 +47,6 @@ function App() {
         <Footer />
       </div>
     </BrowserRouter>
->>>>>>> b78665b (Done with header and footer navigation)
   );
 }
 
