@@ -1,5 +1,5 @@
 import React from "react";
-import "./page.css";
+// import "./page.css";
 import "./login.css"
 import { useState } from "react";
 
@@ -70,7 +70,7 @@ function Login() {
 
 <div className="row">
   <div className="col-md-4">
-  <button type="submit" className="btn btn-danger btn-small">
+  <button type="submit" className="btn btn-danger text-center btn-small">
               Login
             </button>
     </div>

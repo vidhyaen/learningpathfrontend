@@ -97,3 +97,27 @@ The HTML document itself begins with <html> and ends with </html>..`
         experience candidates should have, exam topics, plus resources to help
         you prepare.
       </h6>
+
+mport { useState } from 'react';
+
+function CodeSnippet({ code }) {
+  const [copied, setCopied] = useState(false);
+
+  function handleCopy() {
+    navigator.clipboard.writeText(code)
+      .then(() => setCopied(true))
+      .catch(() => setCopied(false));
+  }
+
+  return (
+    <div>
+      <pre>
+        <code>{code}</code>
+      </pre>
+      <button onClick={handleCopy}>
+        {copied ? 'Copied!' : 'Copy Code'}
+      </button>
+    </div>
+  );
+  
+}
