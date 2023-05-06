@@ -102,3 +102,25 @@ function CodeSnippet({ code }) {
   );
   
 }
+
+  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample1"
+                  >
+                    <div class="accordion-body">
+                      <button className="btn  shadow btn-small">
+                        HTML Basics
+                      </button>
+                      <button className="btn  shadow btn-small">
+                        HTML5 Semantic Elements
+                      </button>
+                      <button className="btn  shadow btn-small">
+                        HTML Forms and Validation
+                      </button>
+                      <button className="btn  shadow btn-small">
+                        Convention and Best Practices
+                      </button>
+                    </div>
+                  </div>

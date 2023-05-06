@@ -1,10 +1,28 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import "../App.css";
+import "./Courseviewsidebar";
+import {Courseviewsidebar}  from "./Courseviewsidebar";
 function Coursedetail() {
   const { id } = useParams();
+  const  [isHidden, setIsHidden] = React.useState(true);
   // const navigate = useNavigate();
-
+  // const handleComplete =(event)=> {
+  //   console.log("complete");
+  //   // navigate("/courseviewsidebar");
+  // }
+   const  openNav = () => {
+     setIsHidden(false);
+     setTimeout(() => {
+    document.getElementById("mySidenav").style.width = "800px";
+      }, 600);
+    }
+   
+    const closeNav = () => {
+      console.log("close");
+      setIsHidden(true);
+    
+    }
   return (
     <div className="App-header">
       {/* course 1 */}
@@ -41,8 +59,9 @@ function Coursedetail() {
                     aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample"
                   >
-                    <div class="accordion-body">
-                      <button className="btn  shadow btn-small">
+                 
+                     <div class="accordion-body">
+                      <button className="btn  shadow btn-small" onClick={openNav} id="in" >
                         How does internet works
                       </button>
                       <button className="btn  shadow btn-small">
@@ -60,6 +79,9 @@ function Coursedetail() {
                 </div>
               </div>
             </div>
+            {!isHidden ?  <Courseviewsidebar  closeNav={closeNav}  /> : ''}  
+            
+            
             {/* end of row2 */}
             <div className="col-md-4 pt-3 ">
               <div
