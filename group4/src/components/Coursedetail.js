@@ -12,7 +12,7 @@ function Coursedetail() {
   //   // navigate("/courseviewsidebar");
   // }
    const  openNav = () => {
-     setIsHidden(false);
+     setIsHidden(true);
      setTimeout(() => {
     document.getElementById("mySidenav").style.width = "800px";
       }, 600);
@@ -47,7 +47,7 @@ function Coursedetail() {
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
-                      aria-expanded="false"
+                      aria-expanded="true"
                       aria-controls="flush-collapseOne"
                     >
                       Internet
@@ -86,16 +86,16 @@ function Coursedetail() {
             <div className="col-md-4 pt-3 ">
               <div
                 class="accordion accordion-flush"
-                id="accordionFlushExample1 "
+                id="accordionFlushExample"
               >
                 <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingTwo">
+                  <h2 class="accordion-header" id="flush-headingOne">
                     <button
                       class="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
-                      aria-expanded="false"
+                      aria-expanded="true"
                       aria-controls="flush-collapseOne"
                     >
                       HTML
@@ -104,8 +104,8 @@ function Coursedetail() {
                   <div
                     id="flush-collapseOne"
                     class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample1"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
                       <button className="btn  shadow btn-small">
@@ -129,16 +129,16 @@ function Coursedetail() {
             <div className="col-md-4 pt-3 ">
               <div
                 class="accordion accordion-flush"
-                id="accordionFlushExample1 "
+                id="accordionFlushExample "
               >
                 <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingTwo">
+                  <h2 class="accordion-header" id="flush-headingOne">
                     <button
                       class="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
-                      aria-expanded="false"
+                      aria-expanded="true"
                       aria-controls="flush-collapseOne"
                     >
                       CSS
@@ -147,8 +147,8 @@ function Coursedetail() {
                   <div
                     id="flush-collapseOne"
                     class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample1"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
                       <button className="btn  shadow btn-small">
@@ -176,16 +176,16 @@ function Coursedetail() {
             <div className="col-md-4 pt-3 ">
               <div
                 class="accordion accordion-flush"
-                id="accordionFlushExample1 "
+                id="accordionFlushExample "
               >
                 <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingTwo">
+                  <h2 class="accordion-header" id="flush-headingOne">
                     <button
                       class="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
-                      aria-expanded="false"
+                      aria-expanded="true"
                       aria-controls="flush-collapseOne"
                     >
                       JavaScript
@@ -194,8 +194,8 @@ function Coursedetail() {
                   <div
                     id="flush-collapseOne"
                     class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample1"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
                       <button className="btn  shadow btn-small">
@@ -215,16 +215,16 @@ function Coursedetail() {
                 </div>
                 <div
                   class="accordion accordion-flush"
-                  id="accordionFlushExample1 "
+                  id="accordionFlushExample "
                 >
                   <div class="accordion-item ">
-                    <h2 class="accordion-header" id="flush-headingTwo">
+                    <h2 class="accordion-header" id="flush-headingOne">
                       <button
                         class="accordion-button collapsed demo border text-white text-small"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne"
-                        aria-expanded="false"
+                        aria-expanded="true"
                         aria-controls="flush-collapseOne"
                       >
                         JavaScript Framework
@@ -233,8 +233,8 @@ function Coursedetail() {
                     <div
                       id="flush-collapseOne"
                       class="accordion-collapse collapse"
-                      aria-labelledby="flush-headingTwo"
-                      data-bs-parent="#accordionFlushExample1"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
                       className="pb-5"
                     >
                       <div class="accordion-body">
@@ -263,16 +263,16 @@ function Coursedetail() {
             <div className="col-md-4 pt-3 ">
               <div
                 class="accordion accordion-flush"
-                id="accordionFlushExample1 "
+                id="accordionFlushExample "
               >
                 <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingTwo">
+                  <h2 class="accordion-header" id="flush-headingOne">
                     <button
                       class="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
-                      aria-expanded="false"
+                      aria-expanded="true"
                       aria-controls="flush-collapseOne"
                     >
                       Version Control Systems
@@ -281,8 +281,8 @@ function Coursedetail() {
                   <div
                     id="flush-collapseOne"
                     class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample1"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
                       <button className="btn  shadow btn-small">
@@ -303,16 +303,16 @@ function Coursedetail() {
               {/* sub accordian */}
               <div
                 class="accordion accordion-flush"
-                id="accordionFlushExample1 "
+                id="accordionFlushExample "
               >
                 <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingTwo">
+                  <h2 class="accordion-header" id="flush-headingOne">
                     <button
                       class="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
-                      aria-expanded="false"
+                      aria-expanded="true"
                       aria-controls="flush-collapseOne"
                     >
                       Web Security Knowledge
@@ -321,8 +321,8 @@ function Coursedetail() {
                   <div
                     id="flush-collapseOne"
                     class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample1"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
                       <h6 className="text-danger ">
@@ -347,16 +347,16 @@ function Coursedetail() {
             <div className="col-md-4 pt-3 ">
               <div
                 class="accordion accordion-flush"
-                id="accordionFlushExample1 "
+                id="accordionFlushExample "
               >
                 <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingTwo">
+                  <h2 class="accordion-header" id="flush-headingOne">
                     <button
                       class="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
-                      aria-expanded="false"
+                      aria-expanded="true"
                       aria-controls="flush-collapseOne"
                     >
                       Testing
@@ -365,8 +365,8 @@ function Coursedetail() {
                   <div
                     id="flush-collapseOne"
                     class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample1"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
                       <button className="btn  shadow btn-small">Jest</button>
@@ -382,13 +382,13 @@ function Coursedetail() {
                 </div>
                   {/* sub acc */}
                   <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingTwo">
+                  <h2 class="accordion-header" id="flush-headingOne">
                     <button
                       class="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
-                      aria-expanded="false"
+                      aria-expanded="true"
                       aria-controls="flush-collapseOne"
                     >
                       UI Frameworks
@@ -397,8 +397,8 @@ function Coursedetail() {
                   <div
                     id="flush-collapseOne"
                     class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample1"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
                       <button className="btn  shadow btn-small">
