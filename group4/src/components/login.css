@@ -19,6 +19,7 @@
       background-color: #080808;
     
       padding: 3rem;
+      
     
       border-radius: 1.5rem;
     
@@ -30,13 +31,13 @@
     
       width: 60%;
     
-      display: flex;
+       display: flex;
     
       flex-direction: column;
     
       justify-content: center;
     
-      align-items: center;
+      align-items: center; 
     
      }
     
@@ -63,8 +64,7 @@
      label {
     
       display: block;
-    
-     
+ 
     
       font-weight: bold;
     

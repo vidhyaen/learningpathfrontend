@@ -5,16 +5,20 @@ import Logo from '../image/logo.jpg'
 //import {  useLocation } from 'react-router-dom';
 
 function Header() {
-  const [isHidden] = useState(false);
-  //const location = useLocation();
+  
+  const [isHidden,setIsHidden] = useState(true);
+  
 
   const handleClick = () => {
-    // setIsHidden(true);
+    //  setIsHidden(true);
   };
 
   useEffect(() => {
     const handlePopstate = () => {
-      // setIsHidden(false);
+      if(window.location.pathname === '/admin')
+       setIsHidden(false);
+       if(window.location.pathname === '/admin/dashboard')
+       setIsHidden(false);
     };
     window.addEventListener('popstate', handlePopstate);
     return () => window.removeEventListener('popstate', handlePopstate);
@@ -34,6 +38,7 @@ function Header() {
         transition: 'opacity 0.5s ease-out',
       }}
     >
+      {}
       <Link to="/about" className="nav-link" onClick={handleClick} style={{ margin: '0 auto', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
         <img src= {Logo} alt="" style={{ width: '40px', height: '40px', marginRight: '5px' }} />
         <span style={{ fontWeight: 'bold' }}>G4 Applicitation</span>

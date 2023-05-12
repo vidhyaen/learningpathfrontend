@@ -29,7 +29,7 @@ function Login() {
   return (
     
     <div
-      className="courses-container"
+      className=""
       style={{
         backgroundColor: "black",
         color: "white",
@@ -80,7 +80,7 @@ function Login() {
             
           </form>
 
-          <p className="signup-link">
+          <p className="signup-link mt-4">
             Don't have an account? <a href="/signup">Sign up here</a>
           </p>
         </div>

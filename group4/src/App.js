@@ -3,29 +3,38 @@ import Footer from './components/footer';
 import Header from './components/header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Certifications from './components/certifications';
+import AdminLogin from './components/Admin/AdminLogin';
 import Roadmaps from './components/roadmaps';
 import Videos from './components/videos';
 import Login from './components/login';
 import Signup from './components/signup';
 import Home from './components/home';
+import Courseviewsidebar from './components/Courseviewsidebar';
 import About from './components/about';
 import Logo from './image/logo.jpg';
 import Coursedetail from './components/Coursedetail';
 import Course from './components/Course';
 import "bootstrap/dist/css/bootstrap.min.css";
-import CourseView from './components/Courseview';
+import Dashboard from './components/Admin/Dashboard';
+import AddCourse from './components/Admin/AddCourse';
+// import CourseView from './components/Courseview';
+
 function App() {
   return (
     <div className="App">
   
   
     <BrowserRouter>
+  
+                
       <div>
+
         <Header />
         <Routes>
         <Route path="/detail/:id" element={<Coursedetail />} />
           <Route path='/course' element={<Course/>} />
-          <Route path="Courseview/:id" element={<CourseView/>} />
+          {/* <Route path="Courseview/:id" element={<CourseView/>} /> */}
+          <Route path="Courseviewsidebar" element={<Courseviewsidebar/>} />
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/about" element={<About />} />
@@ -35,8 +44,14 @@ function App() {
           <Route exact path="/roadmaps" element={<Roadmaps />} />
           <Route exact path="/videos" element={<Videos />} />
           <Route exact path="/login" element={<Login />} />
+          <Route exact path="/admin" element={<AdminLogin />} />
           <Route exact path="/signup" element={<Signup />} />
+          <Route exact path="/admin/dashboard" element={<Dashboard />} />
+          <Route exact path="/admin/courses" element={<AddCourse />} />
+
+           
         </Routes>
+        
         <Footer />
       </div>
     </BrowserRouter>

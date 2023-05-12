@@ -4,20 +4,21 @@ import "./Courseviewside.css";
 
 export const Courseviewsidebar = ({ closeNav }) => {
  const  handleComplete = () => {  
-    // alert("Marked as done");
+  // alert("Marked as done");
   
-  let x=document.getElementById("in");
-  console.log(x);
+  let x=document.getElementById("in1");
+  // console.log(x);
   x.style.backgroundColor="green";
   }
   return (
-    <div id="mySidenav" class="sidenav1">
+    <div id="mySidenav" className="sidenav1">
       <div className="row">
         <div className="col-6">
           <button className="btn btn-success btn-lg" onClick={handleComplete}>Mark as done</button>
         </div>
         <div className="col-6">
-          <a href="#" class="closebtn" onClick={closeNav}>
+          <a href="/detail/1
+          " className="closebtn" onClick={closeNav}>
             &times;
           </a>
         </div>
@@ -65,3 +66,4 @@ export const Courseviewsidebar = ({ closeNav }) => {
     </div>
   );
 };
+export default Courseviewsidebar;

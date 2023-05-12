@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import "../App.css";
-import "./Courseviewsidebar";
+import "./Courseviewside.css";
 import {Courseviewsidebar}  from "./Courseviewsidebar";
 function Coursedetail() {
   const { id } = useParams();
@@ -12,9 +12,11 @@ function Coursedetail() {
   //   // navigate("/courseviewsidebar");
   // }
    const  openNav = () => {
-     setIsHidden(true);
+     setIsHidden(false);
      setTimeout(() => {
-    document.getElementById("mySidenav").style.width = "800px";
+   let Y = document.getElementById("mySidenav")
+   Y.style.width ="600px";
+
       }, 600);
     }
    
@@ -37,13 +39,13 @@ function Coursedetail() {
           <div className="row ">
             <div className="col-md-4 pt-3 ">
               <div
-                class="accordion accordion-flush"
+                 className="accordion accordion-flush"
                 id="accordionFlushExample "
               >
-                <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingOne">
+                <div  className="accordion-item ">
+                  <h2  className="accordion-header" id="flush-headingOne">
                     <button
-                      class="accordion-button collapsed demo border text-white text-small"
+                       className="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
@@ -55,13 +57,13 @@ function Coursedetail() {
                   </h2>
                   <div
                     id="flush-collapseOne"
-                    class="accordion-collapse collapse"
+                     className="accordion-collapse collapse"
                     aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample"
                   >
                  
-                     <div class="accordion-body">
-                      <button className="btn  shadow btn-small" onClick={openNav} id="in" >
+                     <div  className="accordion-body">
+                      <button className="btn  shadow btn-small" onClick={openNav} id="in1" >
                         How does internet works
                       </button>
                       <button className="btn  shadow btn-small">
@@ -85,13 +87,13 @@ function Coursedetail() {
             {/* end of row2 */}
             <div className="col-md-4 pt-3 ">
               <div
-                class="accordion accordion-flush"
+                className="accordion accordion-flush"
                 id="accordionFlushExample"
               >
-                <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingOne">
+                <div className="accordion-item ">
+                  <h2 className="accordion-header" id="flush-headingOne">
                     <button
-                      class="accordion-button collapsed demo border text-white text-small"
+                      className="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
@@ -103,11 +105,11 @@ function Coursedetail() {
                   </h2>
                   <div
                     id="flush-collapseOne"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <button className="btn  shadow btn-small">
                         HTML Basics
                       </button>
@@ -128,13 +130,13 @@ function Coursedetail() {
             {/* end of row2 */}
             <div className="col-md-4 pt-3 ">
               <div
-                class="accordion accordion-flush"
+                className="accordion accordion-flush"
                 id="accordionFlushExample "
               >
-                <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingOne">
+                <div className="accordion-item ">
+                  <h2 className="accordion-header" id="flush-headingOne">
                     <button
-                      class="accordion-button collapsed demo border text-white text-small"
+                      className="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
@@ -146,11 +148,11 @@ function Coursedetail() {
                   </h2>
                   <div
                     id="flush-collapseOne"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <button className="btn  shadow btn-small">
                         CSS Basics
                       </button>
@@ -175,13 +177,13 @@ function Coursedetail() {
           <div className="row ">
             <div className="col-md-4 pt-3 ">
               <div
-                class="accordion accordion-flush"
+                className="accordion accordion-flush"
                 id="accordionFlushExample "
               >
-                <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingOne">
+                <div className="accordion-item ">
+                  <h2 className="accordion-header" id="flush-headingOne">
                     <button
-                      class="accordion-button collapsed demo border text-white text-small"
+                      className="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
@@ -193,11 +195,11 @@ function Coursedetail() {
                   </h2>
                   <div
                     id="flush-collapseOne"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <button className="btn  shadow btn-small">
                         JavaScript Syntax & Basics Constructs
                       </button>
@@ -214,13 +216,13 @@ function Coursedetail() {
                   </div>
                 </div>
                 <div
-                  class="accordion accordion-flush"
+                  className="accordion accordion-flush"
                   id="accordionFlushExample "
                 >
-                  <div class="accordion-item ">
-                    <h2 class="accordion-header" id="flush-headingOne">
+                  <div className="accordion-item ">
+                    <h2 className="accordion-header" id="flush-headingOne">
                       <button
-                        class="accordion-button collapsed demo border text-white text-small"
+                        className="accordion-button collapsed demo border text-white text-small"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne"
@@ -232,12 +234,12 @@ function Coursedetail() {
                     </h2>
                     <div
                       id="flush-collapseOne"
-                      class="accordion-collapse collapse"
+                      className="accordion-collapse collapse pb-5"
                       aria-labelledby="flush-headingOne"
                       data-bs-parent="#accordionFlushExample"
-                      className="pb-5"
+                
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <h6 className="text-danger">
                           Can Choose any of the following
                         </h6>
@@ -262,13 +264,13 @@ function Coursedetail() {
             </div>
             <div className="col-md-4 pt-3 ">
               <div
-                class="accordion accordion-flush"
+                className="accordion accordion-flush"
                 id="accordionFlushExample "
               >
-                <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingOne">
+                <div className="accordion-item ">
+                  <h2 className="accordion-header" id="flush-headingOne">
                     <button
-                      class="accordion-button collapsed demo border text-white text-small"
+                      className="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
@@ -280,11 +282,11 @@ function Coursedetail() {
                   </h2>
                   <div
                     id="flush-collapseOne"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <button className="btn  shadow btn-small">
                         Repo Hosting Services
                       </button>
@@ -302,13 +304,13 @@ function Coursedetail() {
               </div>
               {/* sub accordian */}
               <div
-                class="accordion accordion-flush"
+                className="accordion accordion-flush"
                 id="accordionFlushExample "
               >
-                <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingOne">
+                <div className="accordion-item ">
+                  <h2 className="accordion-header" id="flush-headingOne">
                     <button
-                      class="accordion-button collapsed demo border text-white text-small"
+                      className="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
@@ -320,11 +322,11 @@ function Coursedetail() {
                   </h2>
                   <div
                     id="flush-collapseOne"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <h6 className="text-danger ">
                         Get Least Knowledge about this{" "}
                       </h6>
@@ -346,13 +348,13 @@ function Coursedetail() {
             </div>
             <div className="col-md-4 pt-3 ">
               <div
-                class="accordion accordion-flush"
+                className="accordion accordion-flush"
                 id="accordionFlushExample "
               >
-                <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingOne">
+                <div className="accordion-item ">
+                  <h2 className="accordion-header" id="flush-headingOne">
                     <button
-                      class="accordion-button collapsed demo border text-white text-small"
+                      className="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
@@ -364,11 +366,11 @@ function Coursedetail() {
                   </h2>
                   <div
                     id="flush-collapseOne"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <button className="btn  shadow btn-small">Jest</button>
                       <button className="btn  shadow btn-small">Cypress</button>
                       <button className="btn  shadow btn-small">
@@ -381,10 +383,10 @@ function Coursedetail() {
                   </div>
                 </div>
                   {/* sub acc */}
-                  <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingOne">
+                  <div className="accordion-item ">
+                  <h2 className="accordion-header" id="flush-headingOne">
                     <button
-                      class="accordion-button collapsed demo border text-white text-small"
+                      className="accordion-button collapsed demo border text-white text-small"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
@@ -396,11 +398,11 @@ function Coursedetail() {
                   </h2>
                   <div
                     id="flush-collapseOne"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <button className="btn  shadow btn-small">
                         Bootstrap
                       </button>
