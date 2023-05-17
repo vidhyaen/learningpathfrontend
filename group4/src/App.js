@@ -34,10 +34,14 @@ function App() {
   
                 
       <div>
-      {window.location.pathname === '/admin/' && !<Header /> 
+      {window.location.pathname !== '/admin/' && !<Header /> 
 
       }
-      {window.location.pathname === '/admin/' && !<Footer />}
+      {window.location.pathname === '/admin/' && !<Footer /> 
+
+      }
+      { window.location.pathname !== '/admin' && <Header />  }
+     
         <Routes>
         <Route path="/detail/:id" element={<Coursedetail />} />
           <Route path='/course' element={<Course/>} />
@@ -70,7 +74,7 @@ function App() {
            
         </Routes>
 
-
+        { window.location.pathname !== '/admin' && <Footer />  }
 
       
       </div>
