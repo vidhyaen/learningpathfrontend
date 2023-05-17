@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { } from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
 import Logo from '../image/logo.jpg'
@@ -6,23 +6,15 @@ import Logo from '../image/logo.jpg'
 
 function Header() {
   
-  const [isHidden,setIsHidden] = useState(true);
+
   
 
   const handleClick = () => {
-    //  setIsHidden(true);
+    //setIsHidden(true);
   };
 
-  useEffect(() => {
-    const handlePopstate = () => {
-      if(window.location.pathname === '/admin')
-       setIsHidden(false);
-       if(window.location.pathname === '/admin/dashboard')
-       setIsHidden(false);
-    };
-    window.addEventListener('popstate', handlePopstate);
-    return () => window.removeEventListener('popstate', handlePopstate);
-  }, []);
+
+
 
   return (
     <header className="header"
@@ -34,11 +26,11 @@ function Header() {
         height: '90px',
         display: 'flex',
         alignItems: 'center',
-        opacity: isHidden ? 0 : 1,
+     
         transition: 'opacity 0.5s ease-out',
       }}
     >
-      {}
+    
       <Link to="/about" className="nav-link" onClick={handleClick} style={{ margin: '0 auto', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
         <img src= {Logo} alt="" style={{ width: '40px', height: '40px', marginRight: '5px' }} />
         <span style={{ fontWeight: 'bold' }}>G4 Applicitation</span>
@@ -54,6 +46,8 @@ function Header() {
         <Link to="/login" className="btn-login" onClick={handleClick}>  Login  </Link>
         <Link to="/signup" className="btn-signup" onClick={handleClick}>Signup</Link>
       </div>
+
+     
     </header>
   );
 }

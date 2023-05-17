@@ -1,15 +1,42 @@
 import React from "react";
-import { useState } from "react";
+import { useState} from "react";
 import "../login.css";
+//  import {useNavigate} from "react-router-dom"
+// import axios from "axios";
 function AddCourse(props) {
-  const [cname, setCname] = useState("");
-  const [topic, setTopic] = useState("");
-  const [subtopic, setSubtopic] = useState("");
-  const [description, setDescription] = useState("");
+  const [coursename, setCoursename] = useState("");
+const [imageurl,setImageUrl] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+
+const handleSubmit = async (e) => {
+e.preventDefault();
+var course_url= "http://localhost:8080/admin/courses";
+const course={name:coursename,imageUrl:imageurl}
+ fetch(`${course_url}/add`, {
+  method: 'POST',
+  mode: 'cors',
+  headers: {
+    // Authorization: `Bearer: ${token}`,
+   
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  },
+  body: JSON.stringify(course)
+
+}).then(()=>{
+  console.log("New course added")
+})
+
+}
+// useEffect(()=>{
+//   fetch("http://localhost:8080/admin/courses/getAll")
+//   .then(res=>res.json())
+//   .then((result)=>{
+//     setCoursename(result);
+//   }
+// )
+// },[])
+ 
 
   return (
     <div
@@ -31,6 +58,8 @@ function AddCourse(props) {
             </h1> 
             <a href="/admin/courses">Courses</a>
             <a href="/admin/users">Users</a>
+            <a href="/admin/topic">Topic</a>
+            <a href="/admin/subtopic">Add Sub Topic</a>
             <a href="/admin">Logout</a>
           </div>
             </div>
@@ -38,7 +67,7 @@ function AddCourse(props) {
           <div className="col-md-8">
             <div className="login-container ">
               <h1 className="text-white">Add Course</h1>
-              <form onSubmit={handleSubmit} className="logincontainer">
+              <form className="logincontainer" onSubmit={handleSubmit}>
                 <div className="form-group p-2 mt-3">
                   <label htmlFor="name" className="pb-2 text-left">
                     Course Name
@@ -47,53 +76,27 @@ function AddCourse(props) {
                 <div className="form-group p-2">
                   <input
                     type="text"
-                    value={cname}
-                    name="cname"
-                    onChange={(e) => setCname(e.target.value)}
-                    id="cname"
+                    value={coursename}
+                    name="name"
+                    onChange={(e) => setCoursename(e.target.value)}
+                
                     placeholder="CourseName"
                   />
                 </div>
-                <div className="form-group p-2">
-                  <label htmlFor="topix" className="pb-3">
-                    Topic
+               
+                <div className="form-group p-2 mt-3">
+                  <label htmlFor="name" className="pb-2 text-left">
+                    Image Url
                   </label>
-
-                  <input
-                    type="text"
-                    value={topic}
-                    name="topic"
-                    onChange={(e) => setTopic(e.target.value)}
-                    id="topic"
-                    placeholder="topic"
-                  />
                 </div>
                 <div className="form-group p-2">
-                  <label htmlFor="subtopic" className="pb-3">
-                    Subtopic
-                  </label>
-
                   <input
-                    value={subtopic}
-                    onChange={(e) => setSubtopic(e.target.value)}
                     type="text"
-                    placeholder="subtopic"
-                    id="subtopic"
-                    name="subtopic"
-                  />
-                </div>
-                <div className="form-group p-2">
-                  <label htmlFor="description" className="pb-3">
-                    Description
-                  </label>
-
-                  <input
-                    value={description}
-                    onChange={(e) => setDescription(e.target.value)}
-                    type="text"
-                    placeholder="Add the description"
-                    id="description"
-                    name="description"
+                    value={imageurl}
+                    name="imageurl"
+                    onChange={(e) => setImageUrl(e.target.value)}
+                
+                    placeholder="Add image url"
                   />
                 </div>
 
@@ -101,11 +104,16 @@ function AddCourse(props) {
                   <button
                     type="submit"
                     className="btn btn-success text-center btn-small mt-3"
+                    
                   >
                     Add Course
                   </button>
+                  < a href="/admin/courses" className="btn btn-danger text-center btn-small mt-3 ml-3">Cancel</a>
+
                 </div>
               </form>
+              {coursename}
+              {imageurl}
             </div>
           </div>
         </div>

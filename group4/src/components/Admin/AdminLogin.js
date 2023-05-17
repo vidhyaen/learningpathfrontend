@@ -47,9 +47,9 @@ function AdminLogin() {
       }}
     >
       
-      <div className="container1 mt-5">
+      <div className="container1">
         <div className="login-container">
-          <h1>Login</h1>
+          <h1>Admin Login</h1>
 
           <form onSubmit={handleSubmit}>
             <div className="form-group p-2">

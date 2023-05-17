@@ -6,9 +6,7 @@ import "rsuite/dist/rsuite.min.css";
 import certiimg from "../image/certiflowchart.jpg";
 
 function videos() {
-  const handleBack = () => {
-    window.history.back();
-  };
+  
 
   return (
     <div className="courses-container"
@@ -17,9 +15,7 @@ function videos() {
         color: 'white'
     }}
     >
-      <button className="back-button" onClick={handleBack}>
-        {"<"}
-      </button>
+     
       <div className="text-center p-5">
 
       <h1 className="text-center text-danger mb-5">VIDEOS</h1>
@@ -309,9 +305,8 @@ function videos() {
         style={{ alignSelf: "center", width: "600px", height: "300px" }}
       />
       </div>
-      {/* <button className="back-button" onClick={handleBack}>{"<"}</button> */}
-      <h1>Videos</h1>
-      <p>content goes here</p>
+   
+   
     </div>
   );
 };
