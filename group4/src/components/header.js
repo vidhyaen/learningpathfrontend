@@ -1,4 +1,4 @@
-import React, { } from 'react';
+import React, { useEffect} from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
 import Logo from '../image/logo.jpg'
@@ -12,7 +12,14 @@ function Header() {
   const handleClick = () => {
     //setIsHidden(true);
   };
-
+  
+  useEffect(() => {
+    const handlePopstate = () => {
+      // setIsHidden(true);
+    };
+    window.addEventListener('popstate', handlePopstate);
+    return () => window.removeEventListener('popstate', handlePopstate);
+  }, []);
 
 
 

@@ -3,7 +3,6 @@ import axios from "axios";
 
 const CourseView = () => {
   const [courses, setCourses] = useState([]);
-
   useEffect(() => {
     coursedata();
   }, []);
@@ -34,10 +33,9 @@ const CourseView = () => {
             </a>
             </h1> 
             <a href="/admin/view">Courses</a>
-           
             <a href="/admin/users">Users</a>
-            <a href="/admin/topic">Topic</a>
-            <a href="/admin/subtopic">Add Sub Topic</a>
+            <a href="/admin/viewtopic">Topic</a>
+            <a href="/admin/viewsubtopic"> Sub Topic</a>
             <a href="/admin">Logout</a>
           </div>
             </div>

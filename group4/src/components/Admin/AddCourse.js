@@ -26,6 +26,7 @@ const course={name:coursename,imageUrl:imageurl}
 }).then(()=>{
   console.log("New course added")
 })
+window.location.href="/admin/view"
 
 }
 // useEffect(()=>{
@@ -56,10 +57,10 @@ const course={name:coursename,imageUrl:imageurl}
               Dashboard
             </a>
             </h1> 
-            <a href="/admin/courses">Courses</a>
+            <a href="/admin/view">Courses</a>
             <a href="/admin/users">Users</a>
-            <a href="/admin/topic">Topic</a>
-            <a href="/admin/subtopic">Add Sub Topic</a>
+            <a href="/admin/viewtopic">Topic</a>
+            <a href="/admin/viewsubtopic"> Sub Topic</a>
             <a href="/admin">Logout</a>
           </div>
             </div>

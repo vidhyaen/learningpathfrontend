@@ -2,26 +2,30 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 
-const CourseView = () => {
-  const [Users, setUsers] = useState([]);
+const SubTopicview= () => {
+  const [subtopic, setSubtopic] = useState([{}]);
 
   useEffect(() => {
-    userdata();
+    subtopicdata();
   }, []);
 
-  const userdata = async () => {
-    try {
-      const { data } = await axios.get("http://localhost:8080/signup/getAll");
-      console.log(typeof data);
-      setUsers(data);
+  const subtopicdata = async () => {      
+
+    try {   
+        const { data } = await axios.get(
+            "http://localhost:8080/admin/subtopic/getAll"
+        );
+        console.log(typeof data);
+        setSubtopic(data);
+        console.log(data)
     } catch (error) {
-      console.error("Error fetching course data:", error);
+        console.error("Error fetching course data:", error);
     }
-  };
+};
 
   return (
     <div className="">
-         <h1 className="mt-3 text-center">List of Users</h1>
+         <h1 className="mt-3 text-center">List of Subtopics</h1>
       <div className="py-4 ">
         <div className="row">
           <div className="col-md-4">
@@ -44,19 +48,23 @@ const CourseView = () => {
               <thead className="thead-dark">
                 <tr>
                   <th>S.NO</th>
-                  <th scope="col">User Name</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Role</th>
+                  <th scope="col">Sub Topic</th>
+                  
+                  <th scope="col">Description</th>
+                  <th scope="col">Content Url</th>
+                  <th>Add</th>
                 </tr>
               </thead>
               <tbody>
-                {Users.length >= 1 ? (
-                  Users.map((Signup, index) => (
+                {subtopic.length >= 1 ? (
+                  subtopic.map((SubTopic, index) => (
                     <tr key={index}>
                       <th scope="row">{index + 1}</th>
-                      <td>{Signup.firstname}</td>
-                      <td>{Signup.email}</td>
-                      <td>{Signup.role}</td>
+                      <td>{SubTopic.sub_topic_name}</td>
+                        
+                      <td>{SubTopic.description}</td>
+                      <td>{SubTopic.content_url}</td>
+                      <th><a href="/admin/subtopic" className="btn btn-small btn-success">Add</a></th>
                     </tr>
                   ))
                 ) : (
@@ -73,4 +81,4 @@ const CourseView = () => {
   );
 };
 
-export default CourseView;
+export default SubTopicview;
