@@ -22,6 +22,7 @@ const CourseView = () => {
   return (
     <div className=" ">
         <h1 className="mt-3 text-center">List of Courses</h1>
+        <a href="/admin/addcourse" className="btn btn-primary float-right">Add Course</a>
       <div className="py-4">
       <div className="row">
       <div className="col-md-4">
@@ -46,7 +47,7 @@ const CourseView = () => {
             <tr>
               <th scope="">Course Id</th>
               <th scope="">Course Name</th>
-              <th scope="">Add Course</th>
+            
               <th scope="">Delete Course</th>
             </tr>
           </thead>

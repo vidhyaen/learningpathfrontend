@@ -24,6 +24,7 @@ import Courseview from './components/Admin/Courseview';
 import UserView from './components/Admin/Userview';
 import Topicview from './components/Admin/Topicview';
 import SubTopicview from './components/Admin/SubTopicview';
+import { Sidebar } from './components/Sidebar';
 
 function App() {
 
@@ -62,6 +63,7 @@ function App() {
           <Route exact path="/videos" element={<Videos />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/signup" element={<Signup />} />
+          <Route exact path="/side" element={<Sidebar />} />
           
            
           <Route exact path="/admin" element={<AdminLogin />} />

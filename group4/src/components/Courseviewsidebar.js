@@ -1,69 +1,93 @@
 import React from "react";
 import "./Courseviewside.css";
+import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 
-
-export const Courseviewsidebar = ({ closeNav }) => {
- const  handleComplete = () => {  
-  // alert("Marked as done");
+export const Courseviewsidebar = ({ closeNav,    allCourses}) => {
+  const { id } = useParams();
+  const [courses, setCourses] = useState([]);
+  const [isHidden, setIsHidden] = useState(true);
+  const[isdone, setIsdone] = useState(0);
   
-  let x=document.getElementById("in1");
-  // console.log(x);
-  x.style.backgroundColor="green";
-  }
+  const handleStyle = (currentSubtopicId) => {
+    // alert("Marked as done");
+ 
+    // let x = document.getElementById(`${currentSubtopicId}`);
+
+    isdone? setIsdone(0): setIsdone(1);
+    setIsdone(1);
+   
+  };
+  
+  useEffect(() => {
+    detaildata();
+  }, []);
+  const detaildata = async () => {
+    try {
+      const { data } = await axios.get(
+        `http://localhost:8080/admin/topic/get/${id}`
+      );
+      console.log(typeof data);
+      setCourses(data);
+    } catch (error) {
+      console.error("Error fetching course data:", error);
+    }
+  };
+  const currentSubtopicId= localStorage.getItem("subTopicId"); 
+  console.log(courses, "courses",courses.name);
   return (
-    <div id="mySidenav" className="sidenav1">
-      <div className="row">
-        <div className="col-6">
-          <button className="btn btn-success btn-lg" onClick={handleComplete}>Mark as done</button>
-        </div>
-        <div className="col-6">
-          <a href="/detail/1
-          " className="closebtn" onClick={closeNav}>
+    <>
+    {courses?.map((course, index) => (
+
+             <div id={`topic-${course?.id}`} className="sidenav1">
+    {course?.subTopics?.map((subTopic, index) => (
+      (subTopic?.id == currentSubtopicId) && (
+        <div className="row">
+        <div className="text-right m-3">
+          <button className="btn btn-success btn-lg"  onClick={handleStyle} style={{ backgroundColor: isdone ? 'green' : 'red' }}>
+           
+            {isdone ? 'Completed' : 'Mark as Done'}
+          </button>
+          </div>
+       <div className="col-2"></div>
+        <div className="col-8">
+          <a href={`/detail/${id}`} className="closebtn" onClick={closeNav}>
             &times;
           </a>
-        </div>
+            <div>
+              <h1 className="text-danger">{subTopic.sub_topic_name}</h1>
+
+             
+                <p className="p-3">{subTopic.description}</p>
+           
+
+              <h3 className=" text-danger m-3">
+                Visit the following resources to learn more:
+              </h3>
+<div className="m-3">
+              <a href={subTopic.content_url} className="">
+                <li className="text-info" >W3schools</li>
+               
+              </a>
+              <a href="https://www.geeksforgeeks.org/">
+                <li className="text-info">GeeksforGeeks</li>
+              </a>
+              <a href="https://www.tutorialspoint.com/index.htm">
+                <li className="text-info">Tutorial Point</li>
+              </a>
+            </div>
+            </div>
+        </div> 
+        <div className="col-2"></div>
       </div>
-
-      <h1 className="text-dark">Internet</h1>
-      <p>
-        The Internet is a global network of computers connected to each other
-        which communicate through a standardized set of protocols.
-      </p>
-      <details>
-        <summary>Introduction to the Internet</summary>
-        <p>
-          Before we learn what the Internet is, we need to understand what a
-          Network is.A network is a group of computers or other devices which
-          are connected to eachother.{" "}
-        </p>
-      </details>
-      <details>
-        <summary>What is the Internet?</summary>
-        <p> The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols.</p>
-      </details>
-      <details>
-        <summary>How does the Internet work?</summary>
-        <p> The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols.</p>
-      
-    </details>
-
-      
-
-      
-
-
-      <h2 className="mt-5">Visit the following resources to learn more:</h2>
-
-      <a href="https://cs.fyi/guide/how-does-internet-work">
-        How does the Internet work?
-      </a>
-      <div>
-        <a href="https://www.youtube.com/watch?v=7_LPdttKXPc&ab_channel=Aaron">
-          {" "}
-          How the Internet Works in 5 Minutes
-        </a>
-      </div>
+      )
+    ))}
     </div>
+    
+          ))}{" "}
+</>
   );
 };
 export default Courseviewsidebar;
