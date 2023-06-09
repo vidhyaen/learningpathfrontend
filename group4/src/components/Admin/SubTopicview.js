@@ -25,7 +25,10 @@ const SubTopicview= () => {
 
   return (
     <div className="">
-         <h1 className="mt-3 text-center">List of Subtopics</h1>
+        <h2 className="mt-3 text-center text-white">List of Sub Topics
+            <a href="/admin/subtopic" className="btn btn-success float-right m-3">Add Topic</a>
+        </h2>
+
       <div className="py-4 ">
         <div className="row">
           <div className="col-md-4">
@@ -39,20 +42,22 @@ const SubTopicview= () => {
             <a href="/admin/users">Users</a>
             <a href="/admin/viewtopic">Topic</a>
             <a href="/admin/viewsubtopic"> Sub Topic</a>
+            
+
             <a href="/admin">Logout</a>
             </div>
           </div>
           <div className="col-md-6">
            
-            <table className="table table-bordered table-dark shadow ">
+            <table className="table table-bordered table-dark shadow col-12 ">
               <thead className="thead-dark">
                 <tr>
-                  <th>S.NO</th>
-                  <th scope="col">Sub Topic</th>
+                  <th scope="col-1">S.NO</th>
+                  <th scope="col-3">Sub Topic</th>
                   
-                  <th scope="col">Description</th>
-                  <th scope="col">Content Url</th>
-                  <th>Add</th>
+                  <th scope="col-6">Description</th>
+                  <th scope="col-4">Content Url</th>
+                 
                 </tr>
               </thead>
               <tbody>
@@ -64,7 +69,7 @@ const SubTopicview= () => {
                         
                       <td>{SubTopic.description}</td>
                       <td>{SubTopic.content_url}</td>
-                      <th><a href="/admin/subtopic" className="btn btn-small btn-success">Add</a></th>
+                     
                     </tr>
                   ))
                 ) : (

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Course from "../Course";
+import { useNavigate } from "react-router-dom";
 
 
 const Topicview = () => {
   const [Topics, setTopics] = useState([]);
   const [courses, setCourses] = useState([]);
   const[Subtopics,setSubtopic]=useState([{}]);
+  const Navigate = useNavigate();
 
   useEffect(() => {
     topicdata();
@@ -26,13 +28,15 @@ const Topicview = () => {
     const coursedata = async () => {
     try {
         const { data } = await axios.get(
-            "http://localhost:8080/admin/courses/getAll"
+            "http://localhost:8080/admin/topic/get/${id}"
         );
         console.log(typeof data);   
         setCourses(data);
         console.log(data)
+      
     } catch (error) {
         console.error("Error fetching course data:", error);
+      
     }
 };
 const subtopicdata = async () => {      
@@ -52,7 +56,9 @@ const subtopicdata = async () => {
 
   return (
     <div className="">
-         <h1 className="mt-3 text-center">List of Topics</h1>
+        <h2 className="mt-3 text-center text-white">List of Topics
+            <a href="/admin/topic" className="btn btn-success float-right m-3">Add Topics</a>
+        </h2>
       <div className="py-4 ">
         <div className="row">
           <div className="col-md-4">
@@ -69,32 +75,30 @@ const subtopicdata = async () => {
             <a href="/admin">Logout</a>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-4">
            
             <table className="table table-bordered table-dark shadow ">
               <thead className="thead-dark">
                 <tr>
                   <th>S.NO</th>
                   
+                  
                   <th scope="col">Topic</th>
                  
-                  <th scope="col">Course</th>
-                  <th> Add Topics </th>
-               
+                 
                 </tr>
               </thead>
               <tbody>
                 {Topics.length >= 1 ? (
                   Topics.map((topic, index) => (
                     <tr key={index}>
-                      <th scope="row">{index + 1}</th>
+                      <td scope="">{index + 1}</td>
                       
-                      <td>{topic.topic_name}</td>
                     
-                      {courses.map((course, index) => (
-                        <td>{course.name}</td>
-                      ))}
-                      <th><a href="/admin/topic" className="btn btn-small btn-success">Add</a></th>
+                      <th>{topic.topic_name}</th>
+                   
+                    
+                     
                       
                     </tr>
                   ))

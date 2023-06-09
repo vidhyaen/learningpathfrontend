@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import "../login.css";
-// import {navigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 import axios from "axios";
 
 function AddTopic(props) {
@@ -9,6 +9,7 @@ function AddTopic(props) {
   const [courses, setCourses] = useState([]);
   const [courseId, setCourseId] = useState("");
   const [courseName, setCoursename] = useState("");
+  const navigate=useNavigate();
 
   const coursedata = async () => {
     try {
@@ -42,12 +43,13 @@ function AddTopic(props) {
       body: JSON.stringify(topicBody),
     }).then(() => {
       console.log("New topic added");
+      navigate("/admin/viewtopic")
     });
   };
 
   return (
     <div
-      className="courses-container"
+      className=""
       style={{
         backgroundColor: "black",
         color: "white",

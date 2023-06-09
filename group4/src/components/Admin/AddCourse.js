@@ -41,7 +41,7 @@ window.location.href="/admin/view"
 
   return (
     <div
-      className="courses-container"
+      className=""
       style={{
         backgroundColor: "black",
         color: "white",
@@ -85,21 +85,8 @@ window.location.href="/admin/view"
                   />
                 </div>
                
-                <div className="form-group p-2 mt-3">
-                  <label htmlFor="name" className="pb-2 text-left">
-                    Image Url
-                  </label>
-                </div>
-                <div className="form-group p-2">
-                  <input
-                    type="text"
-                    value={imageurl}
-                    name="imageurl"
-                    onChange={(e) => setImageUrl(e.target.value)}
-                
-                    placeholder="Add image url"
-                  />
-                </div>
+
+            
 
                 <div className="text-center">
                   <button

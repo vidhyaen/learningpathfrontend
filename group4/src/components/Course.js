@@ -3,6 +3,8 @@ import './page.css';
 import { useNavigate } from 'react-router-dom';
 import { useState,useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import '../App.css'
 
 import axios from 'axios';
 
@@ -47,9 +49,25 @@ function Course() {
      
 
         <div className="App-header">
-            <h1 className='course text-white text-center'>Roles</h1>
+          <div className='row header'>
+            <div className='col-md-6'>
+            <Link to="/videos" className="nav-link">
+            Videos
+          </Link>
+            </div>
+            <div className='col-md-6'>
+           
+          <Link to="/certifications" className="nav-link">
+            Guide
+          </Link>
+            </div>
+
+</div>
+         
+            <h1 className='course text-danger text-center'>Roles</h1>
            <div className="container">
           
+
                  {/* <div className="row technology"> */}
                  <div className="row my-5 mx-3 mb-5">
             {
@@ -58,12 +76,15 @@ function Course() {
                     <div className="">
                      
                         <center>
-                 
-
-                          
-                            <button className="btn btn-outline-warning btn-lg btn-center"
-                            onClick={()=>navigate(`/detail/${course.id}`)}>{course.name}</button>
-                          
+                 :
+                          <div className=" text-center course-card"
+                           onClick={()=>navigate(`/detail/${course.id}`)}>
+                       <h2> {course.name}</h2>  
+                          <h4 className='m-2 text-white'>Step by step guide to becoming a modern {course.name} in 2023
+                          </h4>
+                         
+                           
+                          </div>
                             </center>
                     </div>
                 

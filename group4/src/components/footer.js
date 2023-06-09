@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 const FooterHeading = styled.button`
 background-color: black;
 color: white;
@@ -151,88 +152,93 @@ const Footer = () => {
           </TableRow>
         </thead>
         <tbody>
-          <TableRow>
+        <TableRow>
           
-            <TableCell>
-              <FooterLink href="/about">Aim</FooterLink>
-            </TableCell>
-            
-            <TableCell>
-              <FooterLink href="#">Resume Builder</FooterLink>
-            </TableCell>
-            <TableCell>
-              <FooterLink href="#">Vidhya</FooterLink>
-            </TableCell>
-            <TableCell>
-              <FooterLink href="#">
-                <i className="fab fa-facebook-f">Facebook</i> 
-              </FooterLink>
-            </TableCell>
-          </TableRow>
-          <TableRow>
+          <TableCell>
+          <FooterLink href="/about#aim">Aim</FooterLink>
+          </TableCell>
           
-            <TableCell>
-              <FooterLink href="/about">Practices</FooterLink>
-            </TableCell>
-            
-            <TableCell>
-            <FooterLink href="#">Resume Parser</FooterLink>
+          <TableCell>
+            <FooterLink href="#">Resume Builder</FooterLink>
           </TableCell>
           <TableCell>
-              <FooterLink href="#">Impana</FooterLink>
-            </TableCell>
-            <TableCell>
-              <FooterLink href="#">
-                <i className="fab fa-instagram">Instagram</i> 
-              </FooterLink>
-            </TableCell>
-          </TableRow>
-          <TableRow>
+            <FooterLink href="/vidhya">Vidhya</FooterLink>
+          </TableCell>
+          <TableCell>
+            <FooterLink href="https://github.com/vidhyaen">
+            {/* <FontAwesomeIcon icon={faGithub} />*/}
+            GitHub 
+            </FooterLink>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+        
+          <TableCell>
+            <FooterLink href="/about#mission">Mission</FooterLink>
+          </TableCell>
           
-            <TableCell>
-              <FooterLink href="/about">References</FooterLink>
-            </TableCell>
-            
-            <TableCell>
-              <FooterLink href="#">Contribution Tracker</FooterLink>
-            </TableCell>
-            <TableCell>
-              <FooterLink href="#">Josika</FooterLink>
-            </TableCell>
-            <TableCell>
-              <FooterLink href="#">
-                <i className="fab fa-youtube">Youtube</i> 
-              </FooterLink>
-            </TableCell>
-          </TableRow>
-          <TableRow>
-          <TableCell></TableCell>
-           
-            
-            <TableCell></TableCell>
-            <TableCell>
-              <FooterLink href="#">Suhas</FooterLink>
-            </TableCell>
-            <TableCell>
-            <FooterLink href="#">
-            <i className="fab fa-twitter">Twitter</i>
+          <TableCell>
+          <FooterLink href="#">Resume Parser</FooterLink>
+        </TableCell>
+        <TableCell>
+            <FooterLink href="/impana">Impana</FooterLink>
+          </TableCell>
+          <TableCell>
+            <FooterLink href="https://instagram.com/vidhya_en?igshid=ZDdkNTZiNTM=">
+            {/* <FontAwesomeIcon icon={faSquareInstagram} /> */}
+            Instagram 
+            </FooterLink> 
+          </TableCell>
+        </TableRow>
+        <TableRow>
+        
+          <TableCell>
+            <FooterLink href="/about#references">References</FooterLink>
+          </TableCell>
+          
+          <TableCell>
+            <FooterLink href="#">Contribution Tracker</FooterLink>
+          </TableCell>
+          <TableCell>
+            <FooterLink href="/josika">Josika</FooterLink>
+          </TableCell>
+          <TableCell>
+            <FooterLink href="https://www.youtube.com">
+            {/* <FontAwesomeIcon icon={faYoutube} /> */}
+            Youtube 
             </FooterLink>
-            </TableCell>
-          </TableRow>
-          <TableRow>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+        <TableCell></TableCell>
+         
+          
           <TableCell></TableCell>
-            
-            
-            <TableCell>          </TableCell>
-            <TableCell>
-              <FooterLink href="#">Thoufeek</FooterLink>
-            </TableCell>
-            <TableCell>
-            <FooterLink href="#">
-                <i className="fab fa-linkedin">LinkedIn</i>
-            </FooterLink>
-            </TableCell>
-          </TableRow>
+          <TableCell>
+            <FooterLink href="/suhas">Suhas</FooterLink>
+          </TableCell>
+          <TableCell>
+          <FooterLink href="https://twitter.com/VidhyaEn">
+          {/* <FontAwesomeIcon icon={faTwitter} />  */}
+          Twitter
+          </FooterLink>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+        <TableCell></TableCell>
+          
+          
+          <TableCell>          </TableCell>
+          <TableCell>
+            <FooterLink href="/thoufeek">Thoufeek</FooterLink>
+          </TableCell>
+          <TableCell>
+          <FooterLink href="https://in.linkedin.com/in/vidhya-e-n-2585131b9">
+          {/* <FontAwesomeIcon icon={faLinkedin} />  */}
+          LinkedIn
+          </FooterLink>
+          </TableCell>
+        </TableRow>
         </tbody>
       </Table>
     </FooterContainer>

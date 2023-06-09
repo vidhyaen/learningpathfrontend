@@ -21,8 +21,10 @@ const CourseView = () => {
 
   return (
     <div className=" ">
-        <h1 className="mt-3 text-center">List of Courses</h1>
-        <a href="/admin/addcourse" className="btn btn-primary float-right">Add Course</a>
+        <h2 className="mt-3 text-center text-white">List of Courses
+            <a href="/admin/courses" className="btn btn-success float-right m-3">Add Course</a>
+        </h2>
+      
       <div className="py-4">
       <div className="row">
       <div className="col-md-4">
@@ -40,7 +42,7 @@ const CourseView = () => {
             <a href="/admin">Logout</a>
           </div>
             </div>
-            <div className="col-md-6 ">
+            <div className="col-md-4 ">
           
         <table className="table table-bordered table-dark shadow">
           <thead className="thead-dark">
@@ -48,7 +50,6 @@ const CourseView = () => {
               <th scope="">Course Id</th>
               <th scope="">Course Name</th>
             
-              <th scope="">Delete Course</th>
             </tr>
           </thead>
           <tbody>
@@ -57,8 +58,7 @@ const CourseView = () => {
                 <tr key={index}>
                   <th scope="row">{index + 1}</th>
                   <td>{course.name}</td>
-                 <td><a href="/admin/courses" className="btn btn-success btn-small">Add</a></td> 
-                 <td><a href="/admin/" className="btn btn-success">Delete</a></td> 
+                
                 </tr>
               ))
             ) : (

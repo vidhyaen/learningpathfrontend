@@ -52,7 +52,9 @@ function AddSubTopic(props) {
       mode: 'cors',
       headers: {
         // Authorization: `Bearer: ${token}`,
+        //Allow Access control
        
+
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
@@ -70,7 +72,7 @@ function AddSubTopic(props) {
   
   return (
     <div
-      className="courses-container"
+      className=""
       style={{
         backgroundColor: "black",
         color: "white",

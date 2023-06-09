@@ -1,0 +1,107 @@
+.courses-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4%;
+    align-items: center;
+    height: 100vh;
+  }
+  
+ 
+  .back-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: indigo;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .back-link:hover {
+    background-color: rgb(0, 0, 0);
+    color: lightgray;
+    transform: translateY(-50%) scale(1.2);
+  }
+  
+
+  .back-button {
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%) ;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .back-button:hover {
+    
+    background-color: indigo;
+    color: white;
+    border: black;
+    transition: all 0.3s ease;
+    transform: translateY(-50%) scale(1.1);
+  }
+    
+  
+  .image-container {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+  }
+  
+/*background-color: gray;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-50%) scale(1.1);*/
+
+  .quote-box {
+    border: 2px solid white;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .quote-box p {
+    font-size: 20px;
+    font-style: italic;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .social-icons a:hover {
+    color: gray;
+  }

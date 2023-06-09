@@ -11,7 +11,7 @@ const CourseView = () => {
 
   const userdata = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8080/signup/getAll");
+      const { data } = await axios.get("http://localhost:2000/users/getusers");
       console.log(typeof data);
       setUsers(data);
     } catch (error) {
@@ -21,7 +21,7 @@ const CourseView = () => {
 
   return (
     <div className="">
-         <h1 className="mt-3 text-center">List of Users</h1>
+         <h1 className="mt-3 text-center text-white">List of Users</h1>
       <div className="py-4 ">
         <div className="row">
           <div className="col-md-4">
@@ -38,7 +38,7 @@ const CourseView = () => {
             <a href="/admin">Logout</a>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-4">
            
             <table className="table table-bordered table-dark shadow ">
               <thead className="thead-dark">
@@ -49,14 +49,14 @@ const CourseView = () => {
                   <th scope="col">Role</th>
                 </tr>
               </thead>
-              <tbody>
+              {/* <tbody>
                 {Users.length >= 1 ? (
-                  Users.map((Signup, index) => (
+                  Users.map((UserInfo, index) => (
                     <tr key={index}>
                       <th scope="row">{index + 1}</th>
-                      <td>{Signup.firstname}</td>
-                      <td>{Signup.email}</td>
-                      <td>{Signup.role}</td>
+                      <td>{UserInfo.username}</td>
+                      <td>{UserInfo.email}</td>
+                      <td>{UserInfo.role}</td>
                     </tr>
                   ))
                 ) : (
@@ -64,8 +64,27 @@ const CourseView = () => {
                     <td colSpan="2">No Users</td>
                   </tr>
                 )}
-              </tbody>
-            </table>
+              </tbody> */}
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Vidhya E N</td>
+                  <td>envidhya99@gmail.com</td>
+                  <td>Fullstack Developer</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Josika </td>
+                  <td>josika123@gmail.com</td>
+                  <td>Backend Developer</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Pranesh </td>
+                  <td>pranesh.vimal@gmail.com</td>
+                  <td>Frontend Developer</td>
+                </tr>
+  </tbody>            </table>
           </div>
         </div>
       </div>
